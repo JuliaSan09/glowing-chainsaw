@@ -1,6 +1,6 @@
 # Ekya / CMR Admissions CRM — Evaluation Walkthrough
 
-Use this document to walk the Cooper and Co test org (`org60040760589`) and write the admissions use case. Configuration lives in Zoho CRM. This folder holds the SOP screenshots and notes that were not stored as CRM records.
+Use this document to walk the Cooper and Co test org (`org60040760589`). The published-style admissions write-up is [USE-CASE.md](USE-CASE.md). Configuration lives in Zoho CRM. This folder also holds the SOP screenshots.
 
 **SOP:** EKYA | CMR NPS | CMR NPUC | NAVA - CRM Integration  
 **Document ID:** EKYA/01/26-27  
