@@ -137,4 +137,5 @@ When Forms, Bookings, Campaigns, SalesIQ, telephony, the parent portal, and paym
 
 ---
 
-Demo org, sample records, and SOP screenshots: [WALKTHROUGH.md](WALKTHROUGH.md)
+Demo org, sample records, and SOP screenshots: [WALKTHROUGH.md](WALKTHROUGH.md)  
+Live click-through: [DEMO-SCRIPT.md](DEMO-SCRIPT.md)
