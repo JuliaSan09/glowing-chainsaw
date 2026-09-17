@@ -8,21 +8,24 @@
 
 Use **Ekya Lead Stage**. Ignore **Admission Stage** (that is the older EdNova picklist).
 
-Related docs: [use case](USE-CASE.md) · [demo script](DEMO-SCRIPT.md) · [walkthrough](WALKTHROUGH.md)
+Related docs: [use case](USE-CASE.md) · [demo script](DEMO-SCRIPT.md) · [walkthrough](WALKTHROUGH.md) · [Zoho Show deck](show/README.md)
+
+**Presenting:** open [Ekya-CMR-Admissions-Demo.pptx](show/Ekya-CMR-Admissions-Demo.pptx) in Zoho Show. Advance the matching slide, then click CRM. Speaker notes are the talk track.
 
 ---
 
 ## 15 minutes before
 
-1. Sign in as ACP Pradhyuman. Use a large window; hide Setup until Scene 7.
-2. Open four tabs and leave them:
+1. Import [Ekya-CMR-Admissions-Demo.pptx](show/Ekya-CMR-Admissions-Demo.pptx) into Zoho Show. Open Presenter view. See [show/README.md](show/README.md).
+2. Sign in as ACP Pradhyuman. CRM in a second window; hide Setup until Scene 7.
+3. Open four CRM tabs and leave them:
    - **Leads** (All Leads)
    - **Accounts** → `Ekya | CMR Group`
    - **Deals**
    - **Setup → Automation → Workflow Rules** (filter name contains `Ekya`)
-3. On Leads, pin a filter or remember: **Brand Ekya is not empty**.
-4. Do **not** create or edit the showcase leads below. If a stage looks wrong, stop and reset from the walkthrough before the call.
-5. Parking lot for later: parent portal, live WhatsApp, VOIP/IVR, payment gateway, Zoho Bookings, Campaigns, Forms OTP. Those are designed, not live in this org.
+4. On Leads, pin a filter or remember: **Brand Ekya is not empty**.
+5. Do **not** create or edit the showcase leads below. If a stage looks wrong, stop and reset from the walkthrough before the call.
+6. Parking lot for later: parent portal, live WhatsApp, VOIP/IVR, payment gateway, Zoho Bookings, Campaigns, Forms OTP. Those are designed, not live in this org.
 
 ### Search cheat sheet
 
@@ -46,17 +49,19 @@ Related docs: [use case](USE-CASE.md) · [demo script](DEMO-SCRIPT.md) · [walkt
 
 ## Run of show
 
-| Min | Scene | Record to leave on screen |
-| --- | ---: | --- |
-| 0:00 | Open | Accounts tree |
-| 1:30 | Same phone, two campuses | Anita Sharma pair |
-| 4:00 | Sibling and intercampus | Reddy, then Iyer |
-| 6:00 | Three intake channels | Joseph → Banerjee → Nair |
-| 9:00 | Campus visit booked and missed | Menon, then Das |
-| 12:00 | Submit → HOS → waitlist vs accept | Khan → Rao → Patel → Mehta |
-| 16:00 | PU is a different journey | Gowda + Deals |
-| 17:30 | Workflows | Setup list |
-| 19:00 | Close and next steps | Use-case headline |
+Show slides 1–3 (title, order, ground rules) before CRM. Then one cue slide, then the live record.
+
+| Min | Scene | Show slide | Record to leave on screen |
+| --- | ---: | ---: | --- |
+| 0:00 | Open | 4–6 | Accounts tree |
+| 1:30 | Same phone, two campuses | 7 | Anita Sharma pair |
+| 4:00 | Sibling and intercampus | 8 | Reddy, then Iyer |
+| 6:00 | Three intake channels | 9 | Joseph → Banerjee → Nair |
+| 9:00 | Campus visit booked and missed | 10 | Menon, then Das |
+| 12:00 | Submit → HOS → waitlist or accept | 11 | Khan → Rao → Patel → Mehta |
+| 16:00 | PU is a different journey | 12 | Gowda + Deals |
+| 17:30 | Workflows | 13 | Setup list |
+| 19:00 | Close and next steps | 14–15 | Questions slide |
 
 ---
 
@@ -289,16 +294,16 @@ Leave Mehta or the Accounts tree on screen.
 
 ## 12-minute cut
 
-Drop Scenes 2 and 6. In Scene 3 show only **Nair**. Keep 0, 1, 4, 5, 7, 8.
+Drop Scenes 2 and 6 (Show slides 8 and 12). In Scene 3 show only **Nair**. Keep 0, 1, 4, 5, 7, 8.
 
-| Min | Scene |
-| --- | --- |
-| 0:00 | Accounts tree |
-| 1:00 | `9876543210` two campuses |
-| 3:00 | Nair abandoned form + 24h task |
-| 5:00 | Menon booked visit, Das missed |
-| 8:00 | Khan → Rao → Patel → Mehta |
-| 11:00 | Workflow list + close |
+| Min | Scene | Show slide |
+| --- | --- | ---: |
+| 0:00 | Accounts tree | 4–6 |
+| 1:00 | `9876543210` two campuses | 7 |
+| 3:00 | Nair abandoned form + 24h task | 9 |
+| 5:00 | Menon booked visit, Das missed | 10 |
+| 8:00 | Khan → Rao → Patel → Mehta | 11 |
+| 11:00 | Workflow list + close | 13–15 |
 
 ---
 
@@ -317,6 +322,7 @@ Do not improvise a live edit on Sharma, Menon, Das, Rao, Patel, or Mehta while t
 
 ## After the demo
 
+- Zoho Show deck: [show/README.md](show/README.md)
 - Use case write-up: [USE-CASE.md](USE-CASE.md)
 - Record IDs and SOP screenshots: [WALKTHROUGH.md](WALKTHROUGH.md)
 - CRM Case Study: **Ekya CMR Admissions Evaluation** (`902823000002022024`)
