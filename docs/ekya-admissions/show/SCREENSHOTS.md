@@ -1,14 +1,8 @@
 # Screenshots for the Zoho Show deck
 
-Rebuild images + PPTX from the SOP PNGs:
+**Copy into Zia:** [COPY-INTO-ZIA.md](COPY-INTO-ZIA.md) — prompt plus every JPEG shown next to the slide it belongs on.
 
-```bash
-cd docs/ekya-admissions/show
-pip install -r requirements.txt
-python3 build_presentation.py
-```
-
-Zia **Generate** cannot attach images. After a Zia deck is built, click a placeholder → **Insert image** and pick a **.jpg** from the zip (not the GitHub file preview).
+Zia **Generate** cannot attach images. After the deck is built, click a placeholder → **Insert image** and pick a **.jpg** from the zip (not the GitHub file preview).
 
 **Download this:** [Ekya-CMR-Admissions-Screenshots.zip](Ekya-CMR-Admissions-Screenshots.zip)  
 Unzip, then insert into Show. GitHub’s file viewer often shows “failing to load” on these binaries even when the files are fine.

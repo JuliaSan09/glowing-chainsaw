@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Copy into Zoho Show Zia — Ekya / CMR demo</title>
+  <style>
+    :root { font-family: Calibri, Segoe UI, sans-serif; color: #1b2433; }
+    body { max-width: 920px; margin: 32px auto; padding: 0 20px 80px; }
+    h1 { color: #0b1f3a; }
+    .kicker { color: #c4292e; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: 13px; }
+    textarea { width: 100%; min-height: 420px; font: 14px/1.4 ui-monospace, Menlo, monospace; padding: 12px; box-sizing: border-box; }
+    button { background: #c4292e; color: #fff; border: 0; padding: 10px 18px; font-size: 16px; cursor: pointer; }
+    button:hover { background: #a21f24; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0 24px; }
+    td, th { border: 1px solid #d5dee8; padding: 8px 10px; text-align: left; }
+    figure { margin: 24px 0; padding: 12px; background: #f3f5f8; }
+    img { max-width: 100%; height: auto; display: block; }
+    figcaption { margin-top: 8px; color: #4a5568; }
+    code { background: #f3f5f8; padding: 1px 4px; }
+    .ok { color: #1f7a6e; font-weight: 700; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <p class="kicker">Zoho Show · Generate a presentation using Zia</p>
+  <h1>Copy the prompt, then drop in the images</h1>
+  <p>Zia’s 2,500-character box cannot hold JPEGs. Copy the prompt, generate, then insert the pictures on this page onto the <code>[IMG]</code> slides.</p>
+
+  <h2>Settings</h2>
+  <table>
+    <tr><th>Slide Limit</th><td>Largest (not Small)</td></tr>
+    <tr><th>Content Tone</th><td>Professional</td></tr>
+    <tr><th>Visual Style</th><td>Content with Placeholders</td></tr>
+    <tr><th>Theme</th><td>Basic or Executive</td></tr>
+  </table>
+
+  <h2>Prompt (2,497 / 2,500)</h2>
+  <p><button type="button" id="copy">Copy prompt</button><span id="ok" class="ok" hidden>Copied</span></p>
+  <textarea id="prompt" readonly></textarea>
+
+  <h2>Insert these JPEGs after Generate</h2>
+  <p>Download <code>Ekya-CMR-Admissions-Screenshots.zip</code> if this page cannot see the <code>images/</code> folder. Do not insert from the GitHub file preview.</p>
+
+  <figure>
+    <figcaption><strong>Slide 6</strong> — <code>05-sop-brands-campuses.jpg</code></figcaption>
+    <img src="images/05-sop-brands-campuses.jpg" alt="Brands, campuses, stages">
+  </figure>
+  <figure>
+    <figcaption><strong>Slide 9</strong> — <code>07-crm-two-campus.jpg</code> (replace with live CRM capture of 9876543210)</figcaption>
+    <img src="images/07-crm-two-campus.jpg" alt="Two campus CRM frame">
+  </figure>
+  <figure>
+    <figcaption><strong>Slide 12</strong> — <code>11-sop-forms-inbound.jpg</code></figcaption>
+    <img src="images/11-sop-forms-inbound.jpg" alt="Enquiry forms and inbound phone">
+  </figure>
+  <figure>
+    <figcaption><strong>Slide 14</strong> — <code>13-sop-campus-visit.jpg</code></figcaption>
+    <img src="images/13-sop-campus-visit.jpg" alt="Campus visit">
+  </figure>
+  <figure>
+    <figcaption><strong>Slide 19</strong> — <code>18-sop-portal-telephony.jpg</code></figcaption>
+    <img src="images/18-sop-portal-telephony.jpg" alt="Portal and telephony">
+  </figure>
+  <figure>
+    <figcaption><strong>Slide 22</strong> — <code>21-sop-reports.jpg</code></figcaption>
+    <img src="images/21-sop-reports.jpg" alt="Reports">
+  </figure>
+
+  <script>
+    const prompt = `Professional 16:9 CRM demo. Sparse slides, large titles. Do not reorder. Scene slides start with CRM OPEN. After each [IMG] make a full-slide image placeholder.
+
+Title: Connected admissions across four brands and every campus
+Subtitle: Ekya Schools · Ekya Nava · CMR NPS · CMR NPUC · 20-min live demo
+
+1 Title
+2 Order: 0:00 four brands; 1:30 same phone two campuses; 4:00 sibling/intercampus; 6:00 phone, database, abandoned form; 9:00 visit booked/missed; 12:00 submit→HOS→waitlist/accept; 16:00 PU vs K-12; 17:30 workflows; 19:00 close
+3 Watch Ekya Lead Stage (ignore Admission Stage). Do not edit showcase records. Parking lot: portal, WhatsApp, IVR, payments, Bookings, OTP
+4 Scene 0 — Four brands, one CRM. Campuses under brands. K-12 ≠ PU. CRM OPEN: Accounts → Ekya | CMR Group
+5 Table: Ekya Schools JP Nagar/BTM/ITPL/Byrathi/NICE (K-12); CMR NPS HRBR (K-12); Nava Panathur (K-12); CMR NPUC HRBR/BTM/ITPL/Byrathi/NICE (PU); Vana X,Y,Z
+6 [IMG] 05-sop-brands-campuses.jpg
+7 Journey: Enquiry → App Initiated → Visit Scheduled/Missed → App Submitted → HOS Review → Founder Review → Accepted/Waitlist
+8 Scene 1 — Anita Sharma: Aarav JP Nagar Enquiry; Diya BTM App Initiated. Do not unique-lock mobile. CRM OPEN: 9876543210
+9 [IMG] 07-crm-two-campus.jpg
+10 Scene 2 — Sibling Reddy CMRNPS HRBR LKG. Intercampus Iyer Nava from JP Nagar. CRM OPEN: Reddy then Iyer
+11 Scene 3 — Joseph inbound 080-46809096; Banerjee database; Nair abandoned form + 24h task. CRM OPEN: Joseph → Banerjee → Nair
+12 [IMG] 11-sop-forms-inbound.jpg
+13 Scene 4 — Menon booked 18 Sep 2026 10:00 Byrathi. Das missed 10 Sep NICE; Visit Status=Missed fires workflow. CRM OPEN: Menon then Das
+14 [IMG] 13-sop-campus-visit.jpg
+15 Scene 5 — Khan App Submitted; Rao HOS pending; Patel Waitlist; Mehta Accepted. Do not edit founder live. CRM OPEN: Khan → Rao → Patel → Mehta
+16 Scene 6 — PU ≠ K-12. Gowda CMRNPUC HRBR PUC 1 vs Khan K-12 deal. CRM OPEN: Gowda + Deals
+17 Scene 7 — Workflows: Set Stage Enquiry; Form Started; Form Submitted; Visit Day Before; Visit Missed; Founder Accept. Skip EdNova. CRM OPEN: Workflow Rules → Ekya
+18 Scene 8 — Go-live: Forms OTP, portal, Bookings, WhatsApp, telephony, campus payments; Books: one Zoho One org, others standalone
+19 [IMG] 18-sop-portal-telephony.jpg
+20 Questions: two apps one phone; sibling vs intercampus; K-12 vs PU; missed visit; HOS to founder
+21 Searches: 9876543210, Reddy, Iyer, Nair, Menon, Das, Khan, Rao, Patel, Mehta, Gowda, Banerjee, Joseph
+22 [IMG] 21-sop-reports.jpg`;
+    const ta = document.getElementById("prompt");
+    ta.value = prompt;
+    document.getElementById("copy").onclick = async () => {
+      ta.select();
+      try {
+        await navigator.clipboard.writeText(prompt);
+      } catch (e) {
+        document.execCommand("copy");
+      }
+      document.getElementById("ok").hidden = false;
+    };
+  </script>
+</body>
+</html>
