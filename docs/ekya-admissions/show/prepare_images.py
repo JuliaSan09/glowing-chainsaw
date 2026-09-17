@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Copy SOP screenshots into show/images with slide-oriented names, plus CRM capture frames."""
+"""Build Show-safe JPEGs (RGB, no alpha) plus CRM capture frames."""
 
 from pathlib import Path
-from shutil import copy2
+from zipfile import ZIP_DEFLATED, ZipFile
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -11,23 +11,23 @@ FLOW = ROOT.parent / "process-flow"
 IMG = ROOT / "images"
 
 SOP = {
-    "05-sop-brands-campuses.png": "03-brands-campuses-stages.png",
-    "11-sop-forms-inbound.png": "08-enquiry-forms-inbound-phone.png",
-    "13-sop-campus-visit.png": "07-campus-visit-email-whatsapp.png",
-    "18-sop-portal-telephony.png": "04-lead-quality-telephony-portal.png",
-    "21-sop-reports.png": "05-lead-mgmt-usecases-reports.png",
-    "21b-sop-payments-booking.png": "11-qa-payments-forms-booking.png",
+    "05-sop-brands-campuses.jpg": "03-brands-campuses-stages.png",
+    "11-sop-forms-inbound.jpg": "08-enquiry-forms-inbound-phone.png",
+    "13-sop-campus-visit.jpg": "07-campus-visit-email-whatsapp.png",
+    "18-sop-portal-telephony.jpg": "04-lead-quality-telephony-portal.png",
+    "21-sop-reports.jpg": "05-lead-mgmt-usecases-reports.png",
+    "21b-sop-payments-booking.jpg": "11-qa-payments-forms-booking.png",
 }
 
 CRM_FRAMES = [
-    ("07-crm-two-campus.png", "Scene 1 · CRM capture", "Leads search  9876543210", "Two Anita Sharma leads on one list\nAarav JP Nagar Enquiry  ·  Diya BTM App Initiated"),
-    ("08-crm-sibling.png", "Scene 2 · CRM capture", "Leads search  Reddy", "Kavya Reddy  ·  Sibling Enquiry = true"),
-    ("08b-crm-intercampus.png", "Scene 2 · CRM capture", "Leads search  Iyer", "Meera Iyer  ·  Intercampus Enq = true"),
-    ("11-crm-nair.png", "Scene 3 · CRM capture", "Leads search  Nair", "Form Status Abandoned  ·  24h reminder task"),
-    ("13-crm-menon.png", "Scene 4 · CRM capture", "Leads search  Menon", "Visit Scheduled  ·  18 Sep 2026 10:00  ·  event + tasks"),
-    ("13b-crm-das.png", "Scene 4 · CRM capture", "Leads search  Das", "Visit Missed  ·  Visit Status = Missed"),
-    ("14-crm-mehta.png", "Scene 5 · CRM capture", "Leads search  Mehta", "Accepted  ·  Founder Decision = Accept"),
-    ("16-crm-workflows.png", "Scene 7 · CRM capture", "Setup → Workflow Rules → Ekya", "Six Ekya rules. Do not open EdNova."),
+    ("07-crm-two-campus.jpg", "Scene 1 · CRM capture", "Leads search  9876543210", "Two Anita Sharma leads on one list\nAarav JP Nagar Enquiry  ·  Diya BTM App Initiated"),
+    ("08-crm-sibling.jpg", "Scene 2 · CRM capture", "Leads search  Reddy", "Kavya Reddy  ·  Sibling Enquiry = true"),
+    ("08b-crm-intercampus.jpg", "Scene 2 · CRM capture", "Leads search  Iyer", "Meera Iyer  ·  Intercampus Enq = true"),
+    ("11-crm-nair.jpg", "Scene 3 · CRM capture", "Leads search  Nair", "Form Status Abandoned  ·  24h reminder task"),
+    ("13-crm-menon.jpg", "Scene 4 · CRM capture", "Leads search  Menon", "Visit Scheduled  ·  18 Sep 2026 10:00  ·  event + tasks"),
+    ("13b-crm-das.jpg", "Scene 4 · CRM capture", "Leads search  Das", "Visit Missed  ·  Visit Status = Missed"),
+    ("14-crm-mehta.jpg", "Scene 5 · CRM capture", "Leads search  Mehta", "Accepted  ·  Founder Decision = Accept"),
+    ("16-crm-workflows.jpg", "Scene 7 · CRM capture", "Setup → Workflow Rules → Ekya", "Six Ekya rules. Do not open EdNova."),
 ]
 
 
@@ -42,7 +42,24 @@ def _font(size, bold=False):
     return ImageFont.load_default()
 
 
-def frame(path, kicker, cue, body):
+def to_jpeg(src: Path, dest: Path, max_w=1400):
+    im = Image.open(src)
+    if im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info):
+        im = im.convert("RGBA")
+        bg = Image.new("RGB", im.size, (255, 255, 255))
+        bg.paste(im, mask=im.split()[-1])
+        im = bg
+    else:
+        im = im.convert("RGB")
+    w, h = im.size
+    if w > max_w:
+        h = int(h * max_w / w)
+        im = im.resize((max_w, h), Image.Resampling.LANCZOS)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    im.save(dest, "JPEG", quality=82, optimize=True, progressive=True)
+
+
+def frame(path: Path, kicker, cue, body):
     w, h = 1600, 900
     im = Image.new("RGB", (w, h), (243, 245, 248))
     d = ImageDraw.Draw(im)
@@ -58,17 +75,25 @@ def frame(path, kicker, cue, body):
         d.text((100, y), line, fill=(74, 85, 104), font=_font(28))
         y += 48
     d.text((80, h - 70), "Capture in Cooper and Co CRM before the call. Do not use a mock UI.", fill=(107, 118, 136), font=_font(22))
-    im.save(path, "PNG")
+    im.save(path, "JPEG", quality=85, optimize=True)
 
 
 def main():
     IMG.mkdir(exist_ok=True)
+    for stale in IMG.glob("*.png"):
+        stale.unlink()
+        print("removed", stale.name)
     for dest, src in SOP.items():
-        copy2(FLOW / src, IMG / dest)
-        print("copied", dest)
+        to_jpeg(FLOW / src, IMG / dest)
+        print("jpeg", dest, (IMG / dest).stat().st_size)
     for name, kicker, cue, body in CRM_FRAMES:
         frame(IMG / name, kicker, cue, body)
-        print("frame", name)
+        print("frame", name, (IMG / name).stat().st_size)
+    zip_path = ROOT / "Ekya-CMR-Admissions-Screenshots.zip"
+    with ZipFile(zip_path, "w", ZIP_DEFLATED) as zf:
+        for p in sorted(IMG.glob("*.jpg")):
+            zf.write(p, arcname=p.name)
+    print("zip", zip_path, zip_path.stat().st_size)
 
 
 if __name__ == "__main__":

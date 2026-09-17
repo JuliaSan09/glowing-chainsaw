@@ -11,9 +11,9 @@ Paste [zia-generate-prompt.txt](zia-generate-prompt.txt) into **Describe your pr
 | Visual Style | Content with Placeholders |
 | Theme | Basic or Executive |
 
-Then **Generate Presentation**. After it builds, keep the slide order. Drop screenshots onto placeholders using [SCREENSHOTS.md](SCREENSHOTS.md) — SOP images are ready; CRM stills must be captured live.
+Then **Generate Presentation**. After it builds, keep the slide order. Do not insert from the GitHub preview. Download [Ekya-CMR-Admissions-Screenshots.zip](Ekya-CMR-Admissions-Screenshots.zip), unzip, and drop the **.jpg** files onto placeholders ([SCREENSHOTS.md](SCREENSHOTS.md)).
 
-File: [Ekya-CMR-Admissions-Demo.pptx](Ekya-CMR-Admissions-Demo.pptx)
+If Show rejected the earlier PPTX, re-import [Ekya-CMR-Admissions-Demo.pptx](Ekya-CMR-Admissions-Demo.pptx) — it now embeds JPEGs instead of transparent PNGs.
 
 17 widescreen slides in the **same order as the live CRM demo**. Speaker notes on every slide are the talk track. Regenerating: `python3 docs/ekya-admissions/show/build_presentation.py`
 
@@ -49,19 +49,19 @@ Do not stay on a slide while they could be looking at the live lead. Advance Sho
 | 3 | | Before we click | — |
 | 4 | 0:00 | Scene 0 — Four brands, one CRM | Accounts → Ekya \| CMR Group |
 | 5 | | Brands and campuses | Stay on Accounts |
-| 6 | | SOP screenshot — brands and stages | `05-sop-brands-campuses.png` |
+| 6 | | SOP screenshot — brands and stages | `05-sop-brands-campuses.jpg` |
 | 7 | | Ekya Lead Stage path | — |
 | 8 | 1:30 | Scene 1 — Same phone, two campuses | Leads → `9876543210` |
 | 9 | 4:00 | Scene 2 — Sibling and intercampus | `Reddy` then `Iyer` |
 | 10 | 6:00 | Scene 3 — Three intake channels | Joseph → Banerjee → Nair |
-| 11 | | SOP screenshot — forms and inbound phone | `11-sop-forms-inbound.png` |
+| 11 | | SOP screenshot — forms and inbound phone | `11-sop-forms-inbound.jpg` |
 | 12 | 9:00 | Scene 4 — Visit booked and missed | `Menon` then `Das` |
-| 13 | | SOP screenshot — campus visit flow | `13-sop-campus-visit.png` |
+| 13 | | SOP screenshot — campus visit flow | `13-sop-campus-visit.jpg` |
 | 14 | 12:00 | Scene 5 — Submit → HOS → waitlist or accept | Khan → Rao → Patel → Mehta |
 | 15 | 16:00 | Scene 6 — PU is not K-12 | `Gowda` + Deals |
 | 16 | 17:30 | Scene 7 — Six workflows | Setup → Workflow Rules → Ekya |
 | 17 | 19:00 | Scene 8 — In this org / go-live | — |
-| 18 | | SOP screenshot — portal and telephony | `18-sop-portal-telephony.png` |
+| 18 | | SOP screenshot — portal and telephony | `18-sop-portal-telephony.jpg` |
 | 19 | | Questions | Leave up |
 | 20 | appendix | Search cheat sheet | Presenter only |
 | 21 | appendix | 12-minute cut | Presenter only |
