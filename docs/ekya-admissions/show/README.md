@@ -1,5 +1,18 @@
 # Zoho Show deck — import and present
 
+## Generate with Zia AI (this screen)
+
+Paste [zia-generate-prompt.txt](zia-generate-prompt.txt) into **Describe your presentation idea** (2,446 / 2,500 characters).
+
+| Setting | Use |
+| --- | --- |
+| Slide Limit | Largest option available (not Small — Small will collapse the 16-slide order) |
+| Content Tone | Professional |
+| Visual Style | Content with Placeholders |
+| Theme | Basic or Executive |
+
+Then **Generate Presentation**. After it builds, keep the slide order. Add a footer on scene slides if Zia omitted `CRM OPEN`.
+
 File: [Ekya-CMR-Admissions-Demo.pptx](Ekya-CMR-Admissions-Demo.pptx)
 
 17 widescreen slides in the **same order as the live CRM demo**. Speaker notes on every slide are the talk track. Regenerating: `python3 docs/ekya-admissions/show/build_presentation.py`
