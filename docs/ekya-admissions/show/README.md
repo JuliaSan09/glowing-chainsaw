@@ -11,7 +11,7 @@ Paste [zia-generate-prompt.txt](zia-generate-prompt.txt) into **Describe your pr
 | Visual Style | Content with Placeholders |
 | Theme | Basic or Executive |
 
-Then **Generate Presentation**. After it builds, keep the slide order. Add a footer on scene slides if Zia omitted `CRM OPEN`.
+Then **Generate Presentation**. After it builds, keep the slide order. Drop screenshots onto placeholders using [SCREENSHOTS.md](SCREENSHOTS.md) — SOP images are ready; CRM stills must be captured live.
 
 File: [Ekya-CMR-Admissions-Demo.pptx](Ekya-CMR-Admissions-Demo.pptx)
 
@@ -42,26 +42,31 @@ Do not stay on a slide while they could be looking at the live lead. Advance Sho
 
 ## Slide order (matches the 20-minute script)
 
-| Slide | When | Show title | CRM |
+| Slide | When | Show title | CRM / image |
 | ---: | --- | --- | --- |
 | 1 | 0:00 | Title | — |
 | 2 | | Presenting order | — |
 | 3 | | Before we click | — |
 | 4 | 0:00 | Scene 0 — Four brands, one CRM | Accounts → Ekya \| CMR Group |
 | 5 | | Brands and campuses | Stay on Accounts |
-| 6 | | Ekya Lead Stage path | — |
-| 7 | 1:30 | Scene 1 — Same phone, two campuses | Leads → `9876543210` |
-| 8 | 4:00 | Scene 2 — Sibling and intercampus | `Reddy` then `Iyer` |
-| 9 | 6:00 | Scene 3 — Three intake channels | Joseph → Banerjee → Nair |
-| 10 | 9:00 | Scene 4 — Visit booked and missed | `Menon` then `Das` |
-| 11 | 12:00 | Scene 5 — Submit → HOS → waitlist or accept | Khan → Rao → Patel → Mehta |
-| 12 | 16:00 | Scene 6 — PU is not K-12 | `Gowda` + Deals |
-| 13 | 17:30 | Scene 7 — Six workflows | Setup → Workflow Rules → Ekya |
-| 14 | 19:00 | Scene 8 — In this org / go-live | — |
-| 15 | | Questions | Leave up |
-| 16 | appendix | Search cheat sheet | Presenter only |
-| 17 | appendix | 12-minute cut | Presenter only |
+| 6 | | SOP screenshot — brands and stages | `05-sop-brands-campuses.png` |
+| 7 | | Ekya Lead Stage path | — |
+| 8 | 1:30 | Scene 1 — Same phone, two campuses | Leads → `9876543210` |
+| 9 | 4:00 | Scene 2 — Sibling and intercampus | `Reddy` then `Iyer` |
+| 10 | 6:00 | Scene 3 — Three intake channels | Joseph → Banerjee → Nair |
+| 11 | | SOP screenshot — forms and inbound phone | `11-sop-forms-inbound.png` |
+| 12 | 9:00 | Scene 4 — Visit booked and missed | `Menon` then `Das` |
+| 13 | | SOP screenshot — campus visit flow | `13-sop-campus-visit.png` |
+| 14 | 12:00 | Scene 5 — Submit → HOS → waitlist or accept | Khan → Rao → Patel → Mehta |
+| 15 | 16:00 | Scene 6 — PU is not K-12 | `Gowda` + Deals |
+| 16 | 17:30 | Scene 7 — Six workflows | Setup → Workflow Rules → Ekya |
+| 17 | 19:00 | Scene 8 — In this org / go-live | — |
+| 18 | | SOP screenshot — portal and telephony | `18-sop-portal-telephony.png` |
+| 19 | | Questions | Leave up |
+| 20 | appendix | Search cheat sheet | Presenter only |
+| 21 | appendix | 12-minute cut | Presenter only |
+| 22 | appendix | SOP screenshot — reports | Presenter only |
 
-12-minute cut: skip slides 8 and 12. On slide 9, open Nair only.
+Screenshots: [SCREENSHOTS.md](SCREENSHOTS.md). 12-minute cut: skip slides 9 and 15. On slide 10, open Nair only.
 
 Talk tracks, what not to edit, and recovery: [../DEMO-SCRIPT.md](../DEMO-SCRIPT.md)

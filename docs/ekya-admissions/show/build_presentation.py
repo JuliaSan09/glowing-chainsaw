@@ -25,6 +25,8 @@ TEAL = RGBColor(0x1F, 0x7A, 0x6E)
 W = Inches(13.333)
 H = Inches(7.5)
 OUT = Path(__file__).with_name("Ekya-CMR-Admissions-Demo.pptx")
+FLOW = Path(__file__).resolve().parents[1] / "process-flow"
+IMG = Path(__file__).with_name("images")
 
 
 def _set_run(run, size, color, bold=False, italic=False, font_name="Calibri"):
@@ -64,6 +66,39 @@ def box(slide, l, t, w, h, fill=None, line=None):
 
 def tb(slide, l, t, w, h):
     return slide.shapes.add_textbox(l, t, w, h)
+
+
+def fit_picture(slide, path, left, top, width, height):
+    """Place an image inside a box, letterboxed, no crop."""
+    from PIL import Image
+
+    path = Path(path)
+    left, top, width, height = int(left), int(top), int(width), int(height)
+    with Image.open(path) as im:
+        iw, ih = im.size
+    box_a = width / height
+    img_a = iw / ih
+    if img_a > box_a:
+        nw = width
+        nh = int(width / img_a)
+        top = top + (height - nh) // 2
+    else:
+        nh = height
+        nw = int(height * img_a)
+        left = left + (width - nw) // 2
+    slide.shapes.add_picture(str(path), left, top, nw, nh)
+
+
+def add_screenshot_slide(prs, kicker_txt, title, path, caption, notes, cue=None):
+    s = blank(prs)
+    rail(s)
+    kicker(s, kicker_txt)
+    title_block(s, title, y=Inches(0.48))
+    box(s, Inches(0.5), Inches(1.32), Inches(12.3), Inches(5.6), LIGHT)
+    fit_picture(s, path, Inches(0.62), Inches(1.42), Inches(12.06), Inches(5.4))
+    footer(s, caption, cue)
+    set_notes(s, notes)
+    return s
 
 
 def set_notes(slide, text):
@@ -983,18 +1018,61 @@ def main():
     add_ground_rules(prs)
     add_scene0(prs)
     add_campus_map(prs)
+    add_screenshot_slide(
+        prs,
+        "Scene 0  ·  screenshot from the SOP",
+        "Brands, campuses, and lead stages",
+        FLOW / "03-brands-campuses-stages.png",
+        "SOP screenshot",
+        "Leave this up for 10 seconds while Accounts is still open. This is their document, not a mock.",
+        "CRM · stay on Accounts",
+    )
     add_journey(prs)
     add_scene1(prs)
     add_scene2(prs)
     add_scene3(prs)
+    add_screenshot_slide(
+        prs,
+        "Scene 3  ·  screenshot from the SOP",
+        "Enquiry forms and inbound phone",
+        FLOW / "08-enquiry-forms-inbound-phone.png",
+        "SOP screenshot",
+        "Point at enquiry fields and the four hotlines. Then go back to Nair in CRM.",
+        "CRM · return to Nair",
+    )
     add_scene4(prs)
+    add_screenshot_slide(
+        prs,
+        "Scene 4  ·  screenshot from the SOP",
+        "Campus visit and email / WhatsApp flow",
+        FLOW / "07-campus-visit-email-whatsapp.png",
+        "SOP screenshot",
+        "This is the booking and reminder sequence they asked for. Menon and Das are the live proof.",
+        "CRM · Menon then Das",
+    )
     add_scene5(prs)
     add_scene6(prs)
     add_scene7(prs)
     add_scene8(prs)
+    add_screenshot_slide(
+        prs,
+        "Scene 8  ·  screenshot from the SOP",
+        "Portal, telephony, and acceptance",
+        FLOW / "04-lead-quality-telephony-portal.png",
+        "SOP screenshot",
+        "Go-live items live here: portal, telephony, HOS/founder. Do not claim they are live in this org.",
+    )
     add_questions(prs)
     add_cheatsheet(prs)
     add_short_cut(prs)
+    add_screenshot_slide(
+        prs,
+        "Appendix  ·  SOP",
+        "Reports they asked for",
+        FLOW / "05-lead-mgmt-usecases-reports.png",
+        "SOP screenshot · presenter only",
+        "Only if they ask about reports. Do not walk every bullet.",
+    )
     prs.save(OUT)
     print(f"Wrote {OUT} ({len(prs.slides)} slides)")
 

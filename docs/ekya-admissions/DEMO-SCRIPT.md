@@ -49,19 +49,19 @@ Related docs: [use case](USE-CASE.md) · [demo script](DEMO-SCRIPT.md) · [walkt
 
 ## Run of show
 
-Show slides 1–3 (title, order, ground rules) before CRM. Then one cue slide, then the live record.
+Show slides 1–3 (title, order, ground rules) before CRM. Then one cue slide, then the live record. SOP screenshot slides sit immediately after the matching scene.
 
 | Min | Scene | Show slide | Record to leave on screen |
 | --- | ---: | ---: | --- |
-| 0:00 | Open | 4–6 | Accounts tree |
-| 1:30 | Same phone, two campuses | 7 | Anita Sharma pair |
-| 4:00 | Sibling and intercampus | 8 | Reddy, then Iyer |
-| 6:00 | Three intake channels | 9 | Joseph → Banerjee → Nair |
-| 9:00 | Campus visit booked and missed | 10 | Menon, then Das |
-| 12:00 | Submit → HOS → waitlist or accept | 11 | Khan → Rao → Patel → Mehta |
-| 16:00 | PU is a different journey | 12 | Gowda + Deals |
-| 17:30 | Workflows | 13 | Setup list |
-| 19:00 | Close and next steps | 14–15 | Questions slide |
+| 0:00 | Open | 4–7 | Accounts tree |
+| 1:30 | Same phone, two campuses | 8 | Anita Sharma pair |
+| 4:00 | Sibling and intercampus | 9 | Reddy, then Iyer |
+| 6:00 | Three intake channels | 10–11 | Joseph → Banerjee → Nair |
+| 9:00 | Campus visit booked and missed | 12–13 | Menon, then Das |
+| 12:00 | Submit → HOS → waitlist or accept | 14 | Khan → Rao → Patel → Mehta |
+| 16:00 | PU is a different journey | 15 | Gowda + Deals |
+| 17:30 | Workflows | 16 | Setup list |
+| 19:00 | Close and next steps | 17–19 | Questions slide |
 
 ---
 
@@ -294,16 +294,16 @@ Leave Mehta or the Accounts tree on screen.
 
 ## 12-minute cut
 
-Drop Scenes 2 and 6 (Show slides 8 and 12). In Scene 3 show only **Nair**. Keep 0, 1, 4, 5, 7, 8.
+Drop Scenes 2 and 6 (Show slides 9 and 15). In Scene 3 show only **Nair**. Keep 0, 1, 4, 5, 7, 8.
 
 | Min | Scene | Show slide |
 | --- | --- | ---: |
-| 0:00 | Accounts tree | 4–6 |
-| 1:00 | `9876543210` two campuses | 7 |
-| 3:00 | Nair abandoned form + 24h task | 9 |
-| 5:00 | Menon booked visit, Das missed | 10 |
-| 8:00 | Khan → Rao → Patel → Mehta | 11 |
-| 11:00 | Workflow list + close | 13–15 |
+| 0:00 | Accounts tree | 4–7 |
+| 1:00 | `9876543210` two campuses | 8 |
+| 3:00 | Nair abandoned form + 24h task | 10–11 |
+| 5:00 | Menon booked visit, Das missed | 12–13 |
+| 8:00 | Khan → Rao → Patel → Mehta | 14 |
+| 11:00 | Workflow list + close | 16–19 |
 
 ---
 
