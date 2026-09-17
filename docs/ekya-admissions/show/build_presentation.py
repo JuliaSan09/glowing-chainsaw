@@ -1,8 +1,20 @@
 #!/usr/bin/env python3
-"""Build the Ekya / CMR admissions demo deck for Zoho Show (import as PPTX)."""
+"""
+Create the Ekya / CMR admissions demo PPTX from scratch, images included.
+
+  pip install python-pptx pillow
+  python3 build_presentation.py
+
+Reads SOP screenshots from ../process-flow/, writes Show-safe JPEGs to ./images/,
+then writes Ekya-CMR-Admissions-Demo.pptx next to this file.
+
+Import the PPTX into Zoho Show (File → Import). Do not paste this into Zia Generate.
+"""
 
 from pathlib import Path
+from zipfile import ZIP_DEFLATED, ZipFile
 
+from PIL import Image, ImageDraw, ImageFont
 from pptx import Presentation
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
@@ -28,6 +40,15 @@ OUT = Path(__file__).with_name("Ekya-CMR-Admissions-Demo.pptx")
 FLOW = Path(__file__).resolve().parents[1] / "process-flow"
 IMG = Path(__file__).with_name("images")
 
+SOP_SOURCES = {
+    "05-sop-brands-campuses.jpg": "03-brands-campuses-stages.png",
+    "11-sop-forms-inbound.jpg": "08-enquiry-forms-inbound-phone.png",
+    "13-sop-campus-visit.jpg": "07-campus-visit-email-whatsapp.png",
+    "18-sop-portal-telephony.jpg": "04-lead-quality-telephony-portal.png",
+    "21-sop-reports.jpg": "05-lead-mgmt-usecases-reports.png",
+    "21b-sop-payments-booking.jpg": "11-qa-payments-forms-booking.png",
+}
+
 
 def _set_run(run, size, color, bold=False, italic=False, font_name="Calibri"):
     run.font.size = Pt(size)
@@ -40,6 +61,99 @@ def _set_run(run, size, color, bold=False, italic=False, font_name="Calibri"):
     if ea is None:
         ea = etree.SubElement(rPr, qn("a:ea"))
     ea.set("typeface", font_name)
+
+
+def _font(size, bold=False):
+    candidates = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+    ]
+    for path in candidates:
+        if Path(path).exists():
+            return ImageFont.truetype(path, size)
+    return ImageFont.load_default()
+
+
+def png_to_jpeg(src: Path, dest: Path, max_w=1400):
+    """Flatten transparency onto white and write a Show-safe RGB JPEG."""
+    im = Image.open(src)
+    if im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info):
+        im = im.convert("RGBA")
+        bg = Image.new("RGB", im.size, (255, 255, 255))
+        bg.paste(im, mask=im.split()[-1])
+        im = bg
+    else:
+        im = im.convert("RGB")
+    w, h = im.size
+    if w > max_w:
+        im = im.resize((max_w, int(h * max_w / w)), Image.Resampling.LANCZOS)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    im.save(dest, "JPEG", quality=82, optimize=True, progressive=True)
+
+
+def prepare_images():
+    """Convert SOP PNGs to RGB JPEGs, write CRM capture frames, zip the pack."""
+    IMG.mkdir(exist_ok=True)
+    for stale in IMG.glob("*.png"):
+        stale.unlink()
+        print("removed", stale.name)
+
+    missing = [src for src in SOP_SOURCES.values() if not (FLOW / src).exists()]
+    if missing:
+        raise SystemExit(
+            "Missing SOP screenshots in "
+            f"{FLOW}: {', '.join(missing)}\n"
+            "Keep docs/ekya-admissions/process-flow/ next to this script."
+        )
+    used = set()
+    for dest, src in SOP_SOURCES.items():
+        png_to_jpeg(FLOW / src, IMG / dest)
+        used.add(src)
+        print("jpeg", dest, (IMG / dest).stat().st_size)
+
+    for src in sorted(FLOW.glob("*.png")):
+        if src.name in used:
+            continue
+        dest = IMG / f"{src.stem}.jpg"
+        png_to_jpeg(src, dest)
+        print("jpeg", dest.name, dest.stat().st_size)
+
+    frames = [
+        ("07-crm-two-campus.jpg", "Scene 1 · CRM capture", "Leads search  9876543210", "Two Anita Sharma leads on one list\nAarav JP Nagar Enquiry  ·  Diya BTM App Initiated"),
+        ("08-crm-sibling.jpg", "Scene 2 · CRM capture", "Leads search  Reddy", "Kavya Reddy  ·  Sibling Enquiry = true"),
+        ("08b-crm-intercampus.jpg", "Scene 2 · CRM capture", "Leads search  Iyer", "Meera Iyer  ·  Intercampus Enq = true"),
+        ("11-crm-nair.jpg", "Scene 3 · CRM capture", "Leads search  Nair", "Form Status Abandoned  ·  24h reminder task"),
+        ("13-crm-menon.jpg", "Scene 4 · CRM capture", "Leads search  Menon", "Visit Scheduled  ·  18 Sep 2026 10:00  ·  event + tasks"),
+        ("13b-crm-das.jpg", "Scene 4 · CRM capture", "Leads search  Das", "Visit Missed  ·  Visit Status = Missed"),
+        ("14-crm-mehta.jpg", "Scene 5 · CRM capture", "Leads search  Mehta", "Accepted  ·  Founder Decision = Accept"),
+        ("16-crm-workflows.jpg", "Scene 7 · CRM capture", "Setup → Workflow Rules → Ekya", "Six Ekya rules. Do not open EdNova."),
+    ]
+    font = _font(28)
+    title_font = _font(36, bold=True)
+    kicker_font = _font(28, bold=True)
+    cue_font = _font(32, bold=True)
+    footer_font = _font(22)
+    for name, kicker_txt, cue, body in frames:
+        im = Image.new("RGB", (1600, 900), (243, 245, 248))
+        d = ImageDraw.Draw(im)
+        d.rectangle([0, 0, 18, 900], fill=(11, 31, 58))
+        d.rectangle([18, 0, 1600, 10], fill=(196, 41, 46))
+        d.rectangle([80, 140, 1520, 800], outline=(196, 41, 46), width=3, fill=(255, 255, 255))
+        d.text((80, 48), kicker_txt.upper(), fill=(196, 41, 46), font=kicker_font)
+        d.text((100, 200), "Drop live CRM screenshot here", fill=(11, 31, 58), font=title_font)
+        d.text((100, 280), cue, fill=(31, 122, 110), font=cue_font)
+        y = 380
+        for line in body.split("\n"):
+            d.text((100, y), line, fill=(74, 85, 104), font=font)
+            y += 48
+        d.text((80, 830), "Capture in Cooper and Co CRM before the call. Do not use a mock UI.", fill=(107, 118, 136), font=footer_font)
+        im.save(IMG / name, "JPEG", quality=85, optimize=True)
+        print("frame", name, (IMG / name).stat().st_size)
+    zip_path = Path(__file__).with_name("Ekya-CMR-Admissions-Screenshots.zip")
+    with ZipFile(zip_path, "w", ZIP_DEFLATED) as zf:
+        for p in sorted(IMG.glob("*.jpg")):
+            zf.write(p, arcname=p.name)
+    print("zip", zip_path, zip_path.stat().st_size)
 
 
 def add_text(tf, text, size, color, bold=False, italic=False, align=PP_ALIGN.LEFT, space_after=6):
@@ -1012,6 +1126,7 @@ def add_short_cut(prs):
 
 
 def main():
+    prepare_images()
     prs = new_prs()
     add_title_slide(prs)
     add_agenda(prs)

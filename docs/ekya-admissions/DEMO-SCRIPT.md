@@ -10,7 +10,7 @@ Use **Ekya Lead Stage**. Ignore **Admission Stage** (that is the older EdNova pi
 
 Related docs: [use case](USE-CASE.md) · [demo script](DEMO-SCRIPT.md) · [walkthrough](WALKTHROUGH.md) · [Zoho Show deck](show/README.md)
 
-**Presenting:** open [Ekya-CMR-Admissions-Demo.pptx](show/Ekya-CMR-Admissions-Demo.pptx) in Zoho Show. Advance the matching slide, then click CRM. Speaker notes are the talk track.
+**Presenting:** open [Ekya-CMR-Admissions-Demo.pptx](show/Ekya-CMR-Admissions-Demo.pptx) in Zoho Show. Advance the matching slide, then click CRM. Speaker notes are the talk track. To rebuild the PPTX from scratch (SOP images included): `python3 docs/ekya-admissions/show/build_presentation.py` — see [show/README.md](show/README.md).
 
 ---
 
