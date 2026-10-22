@@ -42,6 +42,8 @@ Blueprint on the Deals module sets the stage path: Qualification, Needs Analysis
 
 Each transition has its own rules. Quote amount and quote validity are required before a deal leaves Proposal/Price Quote. Completing a transition can email a manager and create the next task. The stage updates when the representative completes that transition. Managers can see which stage each freight opportunity is in.
 
+![Blueprint on Deals: Qualify, Send Quote, Negotiate, and Approve Discount lead to Closed Won. Disqualify leads to Closed Lost.](images/blueprint-deals.png)
+
 ### Fields for quoting and booking
 
 Layout rules on the Deals and Leads forms show fields when that stage needs them. Rate and lane fields appear when the opportunity is at the quoting stage.
@@ -59,6 +61,8 @@ Converting a lead creates the account and the deal. That action is available on 
 ### Sales team and sales identifier on new leads
 
 A client script on the Leads create page fills the sales team and the representative’s sales identifier from the signed-in user’s profile.
+
+![Client script on the Leads create page filling Sales Team and Sales ID from the signed-in user.](images/client-script-leads.png)
 
 ### One way to create an account
 
