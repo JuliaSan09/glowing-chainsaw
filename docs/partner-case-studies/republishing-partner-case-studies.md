@@ -1,52 +1,102 @@
 # Republishing partner case studies
 
-26 October 2026.
+Process specification
 
-This process is for any partner. It is not written for one account.
+## Table of contents
 
-## Purpose
+1. Introduction
+2. Objectives
+3. Requirements
+3.1 Republished story
+3.1.1 Purpose
+3.1.2 Scope
+3.1.3 Fields required
+3.1.4 Data source
+3.1.5 Data usage / flow
+3.2 Permission record
+3.2.1 Purpose
+3.2.2 Scope
+3.2.3 Fields required
+3.2.4 Data source
+3.2.5 Data usage / flow
+4. Cross-record data mapping
+4.1 Partner section to republished story
+5. Conclusion
 
-Take case studies a partner has already published on their website and shared with us. Put them on Zoho's customers page, in Zoho's format.
+## 1. Introduction
 
-We rewrite. The partner reviews. The page is in the present tense. Customer marketing does not contact the customer. The partner does. Publishing on our page does not change Partner Store points: 10 points for an approved study, up to 5 studies.
+Partners have already published case studies on their own sites and shared them with us. This work puts those stories on Zoho's customers page, in Zoho's format.
 
-## What the process includes
+This document specifies the two records that work needs: the republished story, and the permission record that has to exist before that story goes live. It also specifies how a partner's text maps onto our page, and how the work runs from the first partner through the Find a Partner list and the partner-led webinars.
 
-What we need from the partner, on each story
+## 2. Objectives
 
-- The customer quote, judged by the test below.
-- The customer's permission for Zoho's website, and the partner's approval of the draft. Both have to be on file before a page goes live.
-- Every conversation with the customer about republishing the story.
-- The partner's name, logo, and site address, for the title, the side column, and a nofollow link.
+- Publish the story in our format, in the present tense.
+- The customer's quote names the Zoho product and the outcome. The partner's name is added to that quote when it is required.
+- The partner stays in the story, in Partner engagement.
+- The partner talks to the customer. Customer marketing does not. Partner account managers stay on the thread with us.
+- Nothing goes live without the partner's approval of the draft and the customer's permission for Zoho's website.
+- One process, so a conversation with a partner is not a fresh negotiation.
+- Partner Store points stay as they are. An approved study is worth 10 points, up to 5 studies. This page does not add or remove points.
+- Later, a new story arrives in this format, with the consent form already filled in.
 
-The nofollow link lets the reader visit. Zoho does not pass search credit. It is not a line telling the reader to hire the partner. The call to action at the end of the partner's own case study does not come onto our page. Partner engagement is the credit. The link is the visit.
+## 3. Requirements
 
-The format
+### 3.1 Republished story
 
-- Title. The customer, what changed, the product, and the partner's name. The partner's name is not in the title today.
-- Customer quote.
-- The company.
-- The challenge.
-- The solution.
-- Benefits and ROI.
-- Partner engagement. How the partner came in, and the partner's quote.
-- Side column. Industry, employees, type of business, the customer logo, and the partner logo.
+#### 3.1.1 Purpose
 
-The partner's name in the title, the partner logo, and the nofollow link are not on the page yet. We collect them with the story. We do not hold the story until the template can show them.
+The customers-page record of one customer. It is the story we publish.
 
-How the partner's text is rewritten
+#### 3.1.2 Scope
 
-- Their title card becomes our title: the outcome, the product, and the partner's name.
-- Overview and executive summary become The company.
-- Their problem becomes The challenge.
-- Evaluation, proposed solution, and implementation become The solution: what the product does now. How the partner did the work moves to Partner engagement.
-- Their results become Benefits and ROI. A number comes across only if they say it is still true.
-- Their quote, and how they were brought in, become Partner engagement.
-- Their closing customer quote becomes the customer quote if it passes the test. If it does not, we ask for another. We do not rewrite a failing sentence into a pass and put the customer's name under it.
+In scope:
 
-The quote
+- Stories already published on the partner's website and shared with us, or submitted to Partner Store.
+- Products: CRM, Desk, and Campaigns.
+- One partner at a time. An agreed set, sent in batches of five, six, or seven.
+- Seven in a batch when the person quoted is still there and the facts are current. Five when we need new quotes.
+- One revision after the partner reviews. Then we publish or we hold.
 
-A quote passes when a Zoho product is named and an outcome is named. The partner's name may be in it when that is required. It fails when the partner is the only subject, or when the sentence is praise with no product and no outcome. We do not invent an outcome. That story waits, or it is held.
+Out of scope:
+
+- Customer marketing contacting the customer.
+- A new customer with no story yet. They are introduced to the marketer who already writes original stories with partners. That work stays as it is.
+- A second submission to Partner Store. An approved study cannot be resubmitted.
+- Changing tier points.
+- Holding a story until the page template can show the partner's name, logo, and link.
+- Holding a story so it can debut in a webinar.
+
+#### 3.1.3 Fields required
+
+| Field name | Type | Description |
+| --- | --- | --- |
+| Title | Text | The customer, what changed, the product, and the partner's name. The partner's name is not in the title today. |
+| Customer quote | Long text | Product and outcome. Partner's name only when required. |
+| The company | Long text | Who the customer is. |
+| The challenge | Long text | The problem, as it is now. |
+| The solution | Long text | What the product does now. |
+| Benefits and ROI | Long text | Outcomes. A number only if the partner says it is still true. |
+| Partner engagement | Long text | How the partner came in, and the partner's quote. |
+| Industry | Text | Side column. |
+| Employees | Text | Side column. |
+| Type of business | Text | Side column. |
+| Customer logo | Image | Side column. Needs the customer's permission. |
+| Partner logo | Image | Side column. Not on the page yet. Collected with the story. |
+| Partner link | URL | Nofollow. Not on the page yet. Collected with the story. |
+
+The nofollow link lets the reader visit. Zoho does not pass search credit. It is not a line telling the reader to hire the partner. The call to action at the end of the partner's own case study does not come onto our page.
+
+#### 3.1.4 Data source
+
+- The partner's published page, or the text submitted to Partner Store.
+- The checklist in 3.1.5, returned by the partner.
+- A first draft from the rewrite tool, read by a person before it is sent. If the tool is not ready, we draft by hand. The tool does not email the partner and does not file permission. It does not add a number the source does not contain.
+- The tool flags a quote that would fail the test below, a stale fact, a product outside CRM, Desk, and Campaigns, a bundle that does not name the products, a missing partner quote, or a story whose only partner credit is a call to action. A flag is not quietly edited away.
+
+#### 3.1.5 Data usage / flow
+
+A quote passes when a Zoho product is named and an outcome is named. The partner's name may be in it when that is required. It fails when the partner is the only subject, or when the sentence is praise with no product and no outcome. We do not invent an outcome.
 
 These lines were written for the test. They are not from a customer. Do not publish them.
 
@@ -62,20 +112,12 @@ Passes:
 
 The name on the quote has to be a person who will stand by it. If they have left, the old sentence does not get a new name. The partner gets a new sentence from someone who is there, and can refresh their own page at the same time. We do not refresh it for them.
 
-The rewrite tool
-
-The tool takes the partner's published page, or the text submitted to Partner Store, and returns a draft in the sections above, plus a flag wherever the quote would fail the test, a fact looks stale, the product is outside CRM, Desk, and Campaigns, a bundle does not name the products, the partner quote is missing, or the only partner credit is a call to action.
-
-A flag is not quietly edited away. The draft does not add a number the source does not contain. A person reads every draft before it goes out. The tool does not email the partner and does not file permission. If it is not ready, we draft by hand.
-
-The batch
-
 1. Draft.
-2. Send one batch of five, six, or seven. Seven when the person quoted is still there and the facts are current. Five when we need new quotes. Each story goes with the checklist below.
+2. Send one batch. Each story goes with the checklist below.
 3. The partner comes back with the quote, the customer's permission, and the corrections.
 4. We revise once. If the second draft is still wrong, we stop and talk.
-5. A clear story is published. Clear means the quote passes, the partner has approved the revision, and the customer's permission is on the sheet. Anything else is held, with the reason in one line to the partner. A held story does not block the rest, and it is not part of the next batch's count.
-6. The next batch goes when the reviews on this one are back. We can draft the next one while we wait. We do not send it early.
+5. Publish when the quote passes, the partner has approved the revision, and the permission record is filled. Otherwise hold it, with the reason in one line to the partner. A held story does not block the rest and is not part of the next batch's count.
+6. Send the next batch when the reviews on this one are back. The next batch can be drafted while we wait. It is not sent early.
 
 Checklist. One per story. The partner returns it.
 
@@ -89,34 +131,53 @@ Checklist. One per story. The partner returns it.
 - Consent: the form submitted, or the email attached
 - Anything that must not be published
 
-Consent
+### 3.2 Permission record
+
+#### 3.2.1 Purpose
+
+The row that proves we may publish this story on Zoho's website. No row, no publish.
+
+#### 3.2.2 Scope
+
+In scope:
+
+- The customer's name, company name, and the products in the story. A bundle is named as the products in it.
+- Logo and images, when we use them.
+- The form first. An email from the customer if they will not fill the form in.
+
+Out of scope:
+
+- Treating permission for the partner's website as permission for ours.
+- A phone call the partner describes to us.
+- "The partner says the form was filled in," with nothing we can point at.
+
+#### 3.2.3 Fields required
+
+| Field name | Type | Description |
+| --- | --- | --- |
+| Partner | Lookup | The partner this story belongs to |
+| Their title | Text | Title on the partner's site |
+| Their URL | URL | Where the story is published now |
+| Our working title | Text | Title we are writing |
+| Customer name | Text | As it will appear |
+| Company | Text | As it will appear |
+| Products named in the consent | Text | CRM, Desk, Campaigns, as applicable |
+| Form or email | Picklist | Which proof we have |
+| Date | Date | When the proof arrived |
+| Where the proof is | URL / file | The submission, or the forwarded email |
+| Our URL | URL | Filled when the page is live |
+| Status | Picklist | Draft / With the partner / Revising / Cleared / Published / Held |
+| Hold reason | Text | One line, when status is Held |
+
+#### 3.2.4 Data source
 
 Permission for the partner's website is not permission for Zoho's website. Partner Store also asks for consent before submission and reuse: https://www.zoho.com/store/partner/help/partner-company-manage-case-studies.html
 
 The Zoho form does not attach itself to the case study. Until it does, this link goes out with every batch: https://consent.zohocorp.com/#Consents
 
-Gopal is checking the backend and will say how a submission gets tied to a story. Until then, "the partner says it was filled in" is not enough. The sheet needs something we can point at.
+Gopal is checking the backend and will say how a submission gets tied to a story.
 
-The customer's permission covers their name, the company name, the products in the story, and logo and images if we use any. The form is the first ask. If the customer will not fill it in, the partner sends the email below, the customer replies, and the partner forwards that reply. We do not send the email. A phone call retold to us is not a file. The words can be finished before permission arrives. The page cannot go live before it arrives.
-
-One row per story, opened before the first draft goes out:
-
-- Partner
-- Their title, and their URL
-- Our working title
-- Customer name, as it will appear
-- Company
-- Products named in the consent
-- Form or email
-- Date
-- Where the proof is
-- Our URL, once the page is live
-- Status: draft, with the partner, revising, cleared, published, held
-- If held, the reason, in one line
-
-When submissions attach on their own, this sheet is what gets attached. It is not thrown away first.
-
-Email, if the customer refuses the form. The partner sends it.
+The form is the first ask. If the customer will not fill it in, the partner sends the email below. The customer replies. The partner forwards that reply. We do not send the email.
 
 Subject: Permission to publish your story on Zoho's website
 
@@ -135,19 +196,42 @@ If you would rather use the form, it is here: https://consent.zohocorp.com/#Cons
 
 We ask for the form first. This email is for when you do not want to fill the form in.
 
-A new customer, with no story yet, is introduced to the marketer who already writes original stories with partners. That work stays as it is.
+#### 3.2.5 Data usage / flow
 
-## Short term goals
+Open the row before the first draft goes to the partner. The words of the story can be finished before permission arrives. The page cannot go live before the row is filled.
 
-- One partner at a time. Agree the set, then use the batch above. Products: CRM, Desk, and Campaigns.
-- Bring the partner account managers in before the first batch, and keep them on the thread. They keep us connected to the partner. The partner talks to the customer.
-- Agree promotion with that account team before a page is live. After publish, the partner LinkedIn post uses Partner engagement and the partner quote. A story still in review is not posted. Customer marketing rewrites, sends the batch, and publishes.
-- The first partner is also how we check the rewrite tool. We do not wait for the tool to start.
-- No date on the Find a Partner list until that first batch shows how long a quote and a permission take.
+When a form submission starts attaching to the story on its own, this sheet is what gets attached. It is not thrown away first.
 
-## Long term goals
+## 4. Cross-record data mapping
 
-Find a Partner, checked on 23 October 2026: 1,347 consulting partners and 2,319 story records. 1,039 of those stories are already a Zoho file. The same process runs across this list. A story that is both in a partner's agreed set and on Find a Partner is done once.
+| From | To | Purpose |
+| --- | --- | --- |
+| Partner's published story, or Partner Store text | Republished story | The source we rewrite |
+| Partner checklist | Republished story | Quote, corrections, name, logo, link |
+| Consent form or customer email | Permission record | Proof we may publish |
+| Permission record | Republished story | The gate. No row, no publish |
+| Republished story | Partner LinkedIn post | After the page is live. Uses Partner engagement and the partner quote. A story in review is not posted |
+| Republished story | Partner-led webinar | A use case the partner can present. Dates in section 5 are tentative |
+
+### 4.1 Partner section → republished story
+
+The partner's case study is the source. These fields are what we keep. The call to action at the end of the partner's study does not move.
+
+| Partner's section | Our field | Purpose |
+| --- | --- | --- |
+| Title card | Title | Outcome, product, and the partner's name |
+| Overview and executive summary | The company | Who the customer is |
+| Problem | The challenge | The problem now |
+| Evaluation, proposed solution, implementation | The solution | What the product does now. How the partner did the work moves to Partner engagement |
+| Results | Benefits and ROI | Outcomes still true |
+| Partner quote, and how they were brought in | Partner engagement | The partner's place in the story |
+| Closing customer quote | Customer quote | Only if it passes the test in 3.1.5 |
+
+## 5. Conclusion
+
+Short term: one partner at a time, on the batch in 3.1.5, for CRM, Desk, and Campaigns. Bring the partner account managers in before the first batch and keep them on the thread. Agree promotion with that account team before a page is live. The first partner is also how we check the rewrite tool. We do not wait for the tool. No date on the wider list until that first batch shows how long a quote and a permission take.
+
+Long term: the same process for Find a Partner. Checked on 23 October 2026, that directory has 1,347 consulting partners and 2,319 story records. 1,039 of those stories are already a Zoho file. A story that is both in a partner's agreed set and on Find a Partner is done once.
 
 A script could not open every external link on that check:
 
@@ -161,7 +245,7 @@ Those links are not dropped. The partner supplies the text.
 
 The products stay CRM, Desk, and Campaigns unless we add one later. Once a partner's existing stories are republished, the next story is written in this format and the customer fills the consent form before we draft. Whether partners hear that after the full list, or when their own stories are done, is still open.
 
-The partner-led CRM webinars run alongside this. Dates below are tentative. A published story with permission on the sheet can be the use case the partner presents.
+The partner-led CRM webinars run alongside this. A published story with a filled permission record can be the use case the partner presents. Dates below are tentative. The Tuesday and Thursday slot, 8:30 PM IST, is tentative too.
 
 | Segment | Tentative date | Topic |
 | --- | --- | --- |
@@ -195,5 +279,3 @@ The partner-led CRM webinars run alongside this. Dates below are tentative. A pu
 | Vertical | Thu 3 Dec 2026 | Zoho CRM for Real Estate |
 | Capstone | Tue 8 Dec 2026 | Your AI-powered CRM in 2026: the full Zia agent stack |
 | Wrap | Thu 10 Dec 2026 | CRM adoption clinic: live org teardown and Q&A |
-
-Sessions are planned for Tuesdays and Thursdays at 8:30 PM IST. That slot is tentative too.
