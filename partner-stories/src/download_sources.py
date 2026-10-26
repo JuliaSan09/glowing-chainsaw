@@ -59,11 +59,10 @@ def extract_text(path):
         result = subprocess.run(
             ["pdftotext", "-layout", str(path), "-"],
             capture_output=True,
-            text=True,
             timeout=60,
         )
         if result.returncode == 0 and result.stdout.strip():
-            return result.stdout
+            return result.stdout.decode("utf-8", "replace")
         return ""
     return ""
 
