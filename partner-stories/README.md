@@ -30,3 +30,23 @@ python3 src/download_sources.py
 `held` is a social-only link, a story with no link, or a product outside the three.
 
 Drafts follow `.cursor/skills/zoho-crm-case-study/SKILL.md` on the case-study skill branch, plus the Partner engagement section in `docs/partner-case-studies/republishing-partner-case-studies.md`. A number or a quote is copied from the source. It is not written in for the customer.
+
+`catalog/stories.jsonl` is the index from the first full run (26 October 2026). Descriptions and testimonials are left out of that file because a few of them contained an email address or a phone number.
+
+## First run
+
+1,348 partners, 2,319 stories, no failed profile calls.
+
+| Status | Stories |
+| --- | --- |
+| Text saved, ready to draft | 889 |
+| Held, product outside CRM, Desk, and Campaigns | 1,227 |
+| Held, only a social link | 84 |
+| Held, page did not open | 50 |
+| Held, file had no text layer | 33 |
+| Held, page had no readable text | 27 |
+| Held, site blocked the request | 6 |
+| Held, login wall | 2 |
+| Held, no link | 1 |
+
+Of the 889 with text, 626 are Zoho-hosted files and 263 are web pages. The proof draft is `examples/junxion.md`. The rest are not rewritten yet. A person still edits every draft before it goes to a partner.
