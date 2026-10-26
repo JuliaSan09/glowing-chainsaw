@@ -5,6 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from draft_story import quote_flags
 from links import is_social, primary_link, story_urls
 from products import classify_products, parse_product_ids
 
@@ -28,6 +29,19 @@ class ProductTests(unittest.TestCase):
 
     def test_empty_is_unknown(self):
         self.assertEqual(classify_products("[]")["scope"], "unknown")
+
+
+class FlagTests(unittest.TestCase):
+    def test_partner_in_the_quote_is_flagged(self):
+        flags = quote_flags("Acme Partners understood our business and changed how we work.", "Acme Partners")
+        self.assertIn("The quote names the partner.", flags)
+        self.assertIn("The quote names no Zoho product.", flags)
+
+    def test_a_product_and_an_outcome_pass_those_two_checks(self):
+        flags = quote_flags("Zoho CRM is where the pipeline sits. Follow-ups go out in minutes.", "Acme Partners")
+        self.assertNotIn("The quote names the partner.", flags)
+        self.assertNotIn("The quote names no Zoho product.", flags)
+        self.assertNotIn("The quote has no outcome.", flags)
 
 
 class LinkTests(unittest.TestCase):
