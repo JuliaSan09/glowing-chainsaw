@@ -48,8 +48,6 @@ Not part of the offer until the partner team agrees, and the page template can d
 
 The partner's own case-study template tells them to end on a call to action to their website. That call to action does not come onto our page. Partner engagement is the credit. The link, if it is agreed, is the visit.
 
-![The aim, on one page](figures/01-aim.png)
-
 ## 4. Short term
 
 - One partner at a time. Agree the set of stories with them. Review that set 5 to 7 at a time.
@@ -65,8 +63,6 @@ No date on the larger backlog. After the first batch we will know how long a quo
 - The same rules for the stories on Find a Partner. About 3,000. Treat that as the working number until the list is counted.
 - Same three products, unless we add one on purpose.
 - A story that is in a partner's agreed set and also on Find a Partner is done once.
-
-![Now, next, and after the backlog](figures/05-timeline.png)
 
 ## 6. What we want after the backlog
 
@@ -118,7 +114,7 @@ The customers page already has a shape.
 - Partner engagement. How the partner came in.
 - Fact column. Industry, employees, type of business.
 
-![The customers page, and the three additions that are not agreed](figures/02-page.png)
+The three additions in section 3 (name in the title, logo, nofollow link) are not on this page today.
 
 ### Where the partner's text goes
 
@@ -138,15 +134,21 @@ It fails when the partner is the subject, or when the sentence is praise with no
 
 The four lines below were written for this test. They are not from a customer. Do not publish them.
 
-![Pass and fail](figures/07-quote.png)
+Does not pass:
 
-We do not invent an outcome to push a weak quote over the line. That story waits, or it goes on the hold list.
+- "Our partner understood our business and changed how we work." The partner is the subject.
+- "Zoho has been great." No product. No outcome.
+
+Passes:
+
+- "Zoho CRM is where the pipeline sits. Follow-ups go out without someone having to remember."
+- "A ticket in Zoho Desk is on the same customer we already have in CRM."
+
+We do not rewrite a failing sentence into a pass and then treat it as theirs. We do not invent an outcome to push a weak quote over the line. That story waits, or it goes on the hold list.
 
 The name on the quote has to be a person who will stand by it. If they have left, the old sentence does not get a new name. The partner gets a new sentence from someone who is there.
 
 ## 11. The batch
-
-![One batch](figures/03-batch.png)
 
 1. Draft. The rewrite tool, if a draft exists. Then one of us, every time. The tool does not email the partner.
 2. Send one batch. Five, six, or seven drafts. One checklist per story.
@@ -164,8 +166,6 @@ A story is clear only when all three are true: the quote passes, the partner has
 The customer agreed to the partner's website. Partner Store also tells the partner to have consent before submission and reuse. See the [partner help page](https://www.zoho.com/store/partner/help/partner-company-manage-case-studies.html).
 
 Neither of those is Zoho's consent form. The form does not attach itself to the case study. Until it does, the sheet is the record. No row, no publish.
-
-![Consent, before a story can go live](figures/04-consent.png)
 
 The permission has to cover:
 
@@ -203,8 +203,6 @@ One row per story. Open it before the first draft goes to a partner.
 When the form starts attaching on its own, this sheet is the backlog to attach. We do not delete it first.
 
 ## 13. Who does what
-
-![Who speaks to whom](figures/06-who.png)
 
 Customer marketing. Rewrite. Send the batch. Judge the quote. Publish only from a cleared row. Introduce the original-story marketers when a partner has a new customer.
 
