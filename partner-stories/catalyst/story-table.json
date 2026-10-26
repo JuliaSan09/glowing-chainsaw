@@ -1,0 +1,25 @@
+{
+  "table_name": "PartnerStories",
+  "storage": "Catalyst Data Store. Files go in Stratus, not File Store. File Store sunsets on 31 October 2026.",
+  "stratus_bucket": "partner-story-files",
+  "columns": [
+    {"name": "story_id", "type": "text", "unique": true},
+    {"name": "partner", "type": "text"},
+    {"name": "partner_id", "type": "text"},
+    {"name": "customer", "type": "text"},
+    {"name": "country", "type": "text"},
+    {"name": "industry", "type": "text"},
+    {"name": "product_names", "type": "text"},
+    {"name": "scope", "type": "text"},
+    {"name": "status", "type": "text"},
+    {"name": "hold_reason", "type": "text"},
+    {"name": "source_kind", "type": "text"},
+    {"name": "primary", "type": "text"},
+    {"name": "file_id", "type": "text"},
+    {"name": "stratus_key", "type": "text"},
+    {"name": "flags", "type": "text"},
+    {"name": "draft", "type": "text"}
+  ],
+  "status_values": ["ready", "needs_product", "fetched", "drafted", "held"],
+  "note": "The local runner writes the same rows to data/stories.jsonl. A Catalyst function can load that file into this table when the project is connected."
+}
