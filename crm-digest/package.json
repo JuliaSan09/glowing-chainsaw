@@ -1,0 +1,19 @@
+{
+  "name": "crm-digest",
+  "private": true,
+  "type": "module",
+  "description": "Multi-agent Zoho CRM Digest newsletter: ideation, drafting, and editing from What's New",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "dev": "agent-sdk dev",
+    "validate": "agent-sdk validate --dir ."
+  },
+  "dependencies": {
+    "@grok/agent-sdk": "^0.5.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "6.0.3"
+  }
+}
