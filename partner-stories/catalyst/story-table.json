@@ -3,7 +3,7 @@
   "storage": "Catalyst Data Store. Files go in Stratus, not File Store. File Store sunsets on 31 October 2026.",
   "stratus_bucket": "partner-story-files",
   "columns": [
-    {"name": "story_id", "type": "text", "unique": true},
+    {"name": "story_id", "type": "varchar", "max_length": 255, "unique": true},
     {"name": "partner", "type": "text"},
     {"name": "partner_id", "type": "text"},
     {"name": "customer", "type": "text"},
