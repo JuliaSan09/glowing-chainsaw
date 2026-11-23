@@ -12,6 +12,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 DEFAULT_CATALOG = HERE.parent / "catalog" / "stories.jsonl"
 DEFAULT_OUT = HERE.parent / "catalyst" / "partner_stories_import.csv"
+DRAFTS = HERE.parent / "drafts"
 
 COLUMNS = [
     "story_id", "partner", "partner_id", "customer", "country", "industry",
@@ -20,7 +21,13 @@ COLUMNS = [
 ]
 
 
+def draft_for(story_id: str) -> str:
+    path = DRAFTS / f"{story_id}.md"
+    return path.read_text(encoding="utf-8") if path.exists() else ""
+
+
 def row_for(record: dict) -> dict:
+    draft = draft_for(record.get("story_id", ""))
     return {
         "story_id": record.get("story_id", ""),
         "partner": record.get("partner", ""),
@@ -30,14 +37,14 @@ def row_for(record: dict) -> dict:
         "industry": record.get("industry", ""),
         "product_names": ", ".join(record.get("product_names") or []),
         "scope": record.get("scope", ""),
-        "status": record.get("status", ""),
+        "status": "drafted" if draft else record.get("status", ""),
         "hold_reason": record.get("hold_reason", ""),
         "source_kind": record.get("source_kind", ""),
         "primary_link": record.get("primary", ""),
         "file_id": str(record.get("file_id") or ""),
         "stratus_key": "",
         "flags": ", ".join(record.get("flags") or []),
-        "draft": "",
+        "draft": draft,
     }
 
 

@@ -2,7 +2,7 @@
 
 Pulls case studies from the public Find a Partner directory, keeps the ones that can be read, and prepares a Zoho customers-page draft for CRM, Desk, and Campaigns.
 
-The Catalyst project was not connected from this environment, so the runner stores the same rows locally. `catalyst/story-table.json` is the Data Store table. Files belong in a Stratus bucket named `partner-story-files`. Do not use File Store. It sunsets on 31 October 2026.
+The stories live in the `PartnerStories` Data Store table in the `PartnerStories` Catalyst project. `catalyst/story-table.json` is the table definition, and `src/export_catalyst_csv.py` builds the file that loads it. Files belong in the Stratus bucket `partner-story-files`. Do not use File Store. It sunsets on 31 October 2026.
 
 Nothing here publishes a page or contacts a customer.
 
@@ -50,3 +50,11 @@ Drafts follow `.cursor/skills/zoho-crm-case-study/SKILL.md` on the case-study sk
 | Held, no link | 1 |
 
 Of the 889 with text, 626 are Zoho-hosted files and 263 are web pages. The proof draft is `examples/junxion.md`. The rest are not rewritten yet. A person still edits every draft before it goes to a partner.
+
+## Drafts
+
+`drafts/<story_id>.md` holds one draft per story. The exporter marks any story with a draft file as `drafted` and puts the text in the `draft` column. `data/` is not committed, so source text has to be downloaded again before a story is drafted.
+
+Batch 1 is seven drafts: Junxion (`examples/junxion.md`, copied here) and six more, chosen from CRM stories with enough source text and from different partners. None has a customer quote in the source that passes the quote test, except AndersonDodson. Each draft ends with a Flags list for the editor.
+
+The catalog has 2,300 distinct stories after removing 19 duplicate rows. 875 have text. 7 are drafted, 868 are not.

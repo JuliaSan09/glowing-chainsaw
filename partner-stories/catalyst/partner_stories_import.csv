@@ -18,7 +18,70 @@ a4c3ccb94192b7d4,Techmated Solutions LLC,ec54846103a0688f5ac5cb0b2d9c5cad,Comput
 b37f8e760f94cca3,Zeus4,e418f6032f623894747c2646d09a8ecd,Historias de Exito 2020,,,,unknown,fetched,,zoho_file,zoho-file:2002003111088,2002003111088,,product not on the old case-study record,
 51229860c641cb34,Cloudlaya LLC,60173af51c81dc9034b130728ec24222,Case Study - Mail Migration for Leading Corporate House  in Nepal,,,,unknown,fetched,,zoho_file,zoho-file:2003243049229,2003243049229,,product not on the old case-study record,
 b0defe31a1fd2f17,Erphub,48a03991097f75199119e68dde6c9706,AlphaYield,United States,FinTech,"CRM, Forms, Sign, Analytics",in_scope,fetched,,zoho_file,zoho-file:2005361979507,2005361979507,,,
-d2ed4f48e077c5eb,Erphub,48a03991097f75199119e68dde6c9706,Junxion,Canada,Business Services,"CRM, Analytics, Campaigns, One, Sign",in_scope,fetched,,zoho_file,zoho-file:2005361996866,2005361996866,,,
+d2ed4f48e077c5eb,Erphub,48a03991097f75199119e68dde6c9706,Junxion,Canada,Business Services,"CRM, Analytics, Campaigns, One, Sign",in_scope,drafted,,zoho_file,zoho-file:2005361996866,2005361996866,,,"# Junxion runs lead management and customer support with Zoho CRM
+
+No customer quote is in the source. None is added here.
+
+## The company
+
+Junxion is a business-services company in Canada. Its team handles both B2B and B2C customer requests. The source does not say what Junxion sells, when it was founded, or how many people it employs.
+
+## The challenge
+
+Lead tracking, onboarding, and support sat in separate places. The CRM Junxion already had did not automate lead tracking or conversion, and the source does not name that system. Marketing was not tied to the customer record, so campaigns could not use the same data as sales. Support had to handle B2B and B2C requests without a shared queue. Agreements and compliance checks were done by hand. The data in the CRM was inconsistent, which made the record hard to trust and the reports thin.
+
+## The solution
+
+Junxion's team now works from Zoho CRM.
+
+### Managing lead flow
+
+Leads are tracked in Zoho CRM. Custom modules and fields hold the customer data. Workflow rules create the follow-up tasks, and proposals go out through mail merge. Zoho Forms feeds the same record.
+
+### Campaigns from the customer record
+
+Zoho Marketing Automation is connected to the CRM. Client data is segmented there and kept in sync with the modules in Zoho CRM, so a campaign uses the same customer the sales team already has. The Find a Partner record lists Zoho Campaigns. The PDF names Zoho Marketing Automation.
+
+### Agreements and support on the same customer
+
+Onboarding agreements are generated and checked in Zoho Sign and Zoho Writer. Zoho Desk holds the B2B and B2C ticket forms. Email notifications go out from Desk, and a Telegram chat can be turned into a ticket.
+
+### What managers see
+
+Zoho Analytics dashboards show onboarding progress, tickets, and customer activity.
+
+## Benefits and ROI
+
+Automated lead management and compliance workflows cut the manual tasks by a third. Cleaning and mapping the data removed the inconsistencies the team had been working around, and more people at Junxion use the CRM. Marketing, sales, and support now work from the same customer record.
+
+## Partner engagement
+
+Erphub configured the system. The work took three months: CRM setup and data migration, marketing automation, analytics dashboards, Desk for B2B and B2C tickets, then Zoho Sign and Zoho Writer for onboarding, with end-to-end testing at the end.
+
+Industry type Business services
+Type of business B2B and B2C
+Employees Not stated
+Features that helped us
+Customization
+Workflow automation
+Integrations
+Reports & Analytics
+
+Directory card: Junxion connects leads, agreements, and support in Zoho CRM
+
+## Flags
+
+These are for the editor. They are not part of the page.
+
+- There is no customer quote in the source. The PDF is written in Erphub's voice (""our team"", ""we cleaned"").
+- The quote test cannot be run until a customer says the line. Do not put Erphub's sentences under a customer's name.
+- The previous CRM is not named.
+- One figure is stated: manual tasks reduced by a third. Key results is omitted because there is not a second figure.
+- The directory tags Zoho Campaigns. The PDF says Zoho Marketing Automation.
+- Zoho One is the bundle name on the PDF. The products named in the body are Zoho CRM, Zoho Desk, Zoho Marketing Automation, Zoho Analytics, Zoho Sign, Zoho Forms, and Zoho Writer.
+- We do not know whether anyone at Junxion will stand by a quote. The source names no person.
+- Founded year, headcount, and what Junxion sells are not in the source.
+"
 bedd05b5eef0e0c8,Erphub,48a03991097f75199119e68dde6c9706,Globe Trailers,United States,Manufacturing,"CRM, Forms, One",in_scope,fetched,,zoho_file,zoho-file:2005362683438,2005362683438,,,
 53ee95c7bd355f3a,Erphub,48a03991097f75199119e68dde6c9706,,United Kingdom,Non-Profit Organization Management / NGO,"CRM, Analytics, One, Sites",in_scope,fetched,,zoho_file,zoho-file:2005362689382,2005362689382,,,
 240e21032bc79a21,Erphub,48a03991097f75199119e68dde6c9706,,United States,"Health, Wellness and Fitness","Sites, One",out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2005362689484,2005362689484,,,
@@ -415,7 +478,77 @@ dbe96abe0e65e659,Mango Technologies Ltd.,707f8cd86207a8eb1866ab1cbab2241b,Arto F
 e4ec58e6f082dd05,Abiel Netsolutions FZC,561252fd522f7d481d7d9886c9fd264a,Dubai Bulls,United Arab Emirates,Real Estate,One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2005371731191,2005371731191,,,
 f08aa8cba160c31f,Abiel Netsolutions FZC,561252fd522f7d481d7d9886c9fd264a,Dijla Shipping,United Arab Emirates,Logistics & Transportation,One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2005371751768,2005371751768,,,
 66ee895673514d31,ETD Marketing & Events FZELLC,c2d12e5fe304aa4836e710e9b22859b9,yallacompareinsurancebrokerl,United Arab Emirates,Financial Services and Insurance,CRM Plus,in_scope,fetched,,web,https://www.yallacompare.com,,,"bundle named, products inside it are not",
-ed0f09c917439cc2,Nurture Spark Digital LLC,4def4668b7f3ff54fc015835a42c22a1,Cyberdrone LLC,United Arab Emirates,Aviation,"Projects, CRM, Creator, People, Books, Cliq, Inventory, WorkDrive",in_scope,fetched,,zoho_file,zoho-file:2005349149063,2005349149063,,,
+ed0f09c917439cc2,Nurture Spark Digital LLC,4def4668b7f3ff54fc015835a42c22a1,Cyberdrone LLC,United Arab Emirates,Aviation,"Projects, CRM, Creator, People, Books, Cliq, Inventory, WorkDrive",in_scope,drafted,,zoho_file,zoho-file:2005349149063,2005349149063,,,"# Cyberdrone tracks leads, deals, and quotes for its drone shows in Zoho CRM
+
+No customer quote is in the source. None is added here.
+
+## The company
+
+Cyberdrone is an entertainment drone company in the United Arab Emirates. It provides drone-based solutions for live events, film production, and promotions. It runs a growing fleet of drones, and its projects bring together several teams, including overseas shows. The source does not give a founding year, a headcount, or fleet numbers.
+
+## The challenge
+
+The sales side ran on manual work. Leads came in from the website, email, and phone calls, and they were logged by hand in separate tools or not logged at all. Follow-ups were missed and opportunities were lost. The sales team had no single view of the pipeline, so deals were tracked inconsistently and revenue was hard to forecast. Quotes and proposals were not always accurate, because they did not account for which drones were free or when the team was available.
+
+Customer history was not in one place, so sales reps missed details and their follow-ups looked unprofessional. Without data on past projects, upselling chances were missed.
+
+### Operations behind the sales
+
+The same manual approach affected the work behind the quotes. The company kept drone specifications, assignments, and usage in spreadsheets, so an unavailable drone could be assigned to a project, and maintenance could be missed. Events and film shoots were planned without templates or defined task dependencies, which caused bottlenecks.
+
+## The solution
+
+Cyberdrone adopted Zoho One. Its team works mainly in Zoho CRM, Zoho Creator, Zoho Projects, and Zoho Books, and Zoho CRM is tailored to the company's sales process.
+
+### Leads that arrive and get assigned
+
+Zoho CRM captures leads automatically from web enquiries, email, and social media. Leads are grouped by industry for targeted communication, and tasks are assigned by team availability and skill.
+
+### A pipeline with a follow-up at each stage
+
+Deals move through custom stages: enquiry, proposal, negotiation, and contract. Zoho CRM sends an email follow-up at each stage.
+
+### Quotes that reflect drone availability
+
+A fleet app in Zoho Creator holds each drone's specifications, status, and current assignment. Zoho CRM pulls drone availability from Zoho Creator, so a project quote starts from the fleet the company has free.
+
+### What managers see
+
+Dashboards in Zoho CRM show revenue forecasts and sales performance. Dashboards in Zoho Creator show fleet status, down to the individual drone.
+
+## Benefits
+
+Leads from every channel land in one system and follow-up tasks are assigned automatically. Each deal moves through the same stages, and quotes use real drone availability. Fleet, project, and sales data connect, and the company is set up to grow. The source gives no figure for any of this.
+
+## Partner engagement
+
+Nurture Spark Digital carried out the transformation across the company's departments, with the aim of keeping each department's data connected and accurate. The source does not give the project length.
+
+Industry type Entertainment drone services
+Type of business Not stated
+Employees Not stated
+Features that helped us
+Customization
+Workflow automation
+Integrations
+Reports & Analytics
+
+Directory card: Cyberdrone tracks leads, deals, and quotes for its drone shows in Zoho CRM
+
+## Flags
+
+These are for the editor. They are not part of the page.
+
+- There is no customer quote in the source. The quote test cannot be run.
+- The PDF does not name the customer. It says ""an entertainment drone company"". The name Cyberdrone LLC comes from the directory record. Consent has to name it.
+- The PDF calls the company ""one of UAE's largest drone company"". That is the partner's claim, so it is not in the draft.
+- The source states no figure. Key results is omitted.
+- Zoho One is the bundle in the source. The source calls Zoho CRM, Zoho Creator, Zoho Projects, and Zoho Books the main apps. Zoho People, Zoho Cliq, and Zoho Expense are also named. Zoho CRM is one of three main pillars, and most of the PDF is about fleet and project work. Decide whether the page should lead with Zoho CRM.
+- The PDF also names Paysif, described as Nurture Spark's custom application. It is left out. It is a partner product.
+- The previous system is not named for sales. Fleet records were in spreadsheets.
+- The challenge section also covers fleet and project issues in the PDF. The draft keeps the sales issues and one short operations paragraph.
+- We do not know if anyone at Cyberdrone will stand by a quote.
+"
 bfa93de8dca801bc,Nurture Spark Digital LLC,4def4668b7f3ff54fc015835a42c22a1,LA Laundry - Dry Cleaners & Launderers LLC ,United Arab Emirates,Textiles,"Books, Creator",out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2005349017032,2005349017032,,,
 b3a34799bc887e9e,Nurture Spark Digital LLC,4def4668b7f3ff54fc015835a42c22a1,Desert Falcon FC,United Arab Emirates,Sports and Fitness,"Payroll, Books",out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2005347325174,2005347325174,,,
 d8acf0f4c80ca0c8,Nurture Spark Digital LLC,4def4668b7f3ff54fc015835a42c22a1,Bait Al Zubair,Oman,Govt/PSUs,"TrainerCentral, Commerce, Sites, Books, Backstage, Projects",out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2005349034655,2005349034655,,,
@@ -705,7 +838,76 @@ d711eee834c39b9b,Infolytics,d683dbb1cc344bedd70f82af6f1b8fbc,Eventagrate Group,U
 292767ba5b8f411a,Infolytics,d683dbb1cc344bedd70f82af6f1b8fbc,JF Kapnek Zimbabwe,Zimbabwe,Non-Profit Organization Management / NGO,"Sign, Expense, People, Recruit",out_of_scope,held,"product is outside CRM, Desk, and Campaigns",web,https://www.infolytics.co.za/blogs/post/transforming-operational-efficiency-at-jf-kapnek-zimbabwe-with-zoho-solutions,,,,
 d1e360464e6640ef,Infolytics,d683dbb1cc344bedd70f82af6f1b8fbc,Connect-IT,South Africa,Manufacturing,One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",web,https://www.infolytics.co.za/blogs/post/from-click-to-ship-how-connect-it-automated-sales-and-logistics-end-to-end-with-zoho,,,,
 32be49d16d48305a,Both& Digital Transformation,099b4a171e143386207abacf0324416e,NMG Financial Planning (Pty) Ltd,South Africa,,"One, CRM, Analytics, Bookings",in_scope,fetched,,zoho_file,zoho-file:2004939292618,2004939292618,,,
-31c00b5bea131293,Both& Digital Transformation,099b4a171e143386207abacf0324416e,LFT FIT (PTY) LTD,South Africa,Apparel & Fashion,"People, Analytics, Social, Expense, Inventory, One, CRM, Projects",in_scope,fetched,,zoho_file,zoho-file:2004939288108,2004939288108,,,
+31c00b5bea131293,Both& Digital Transformation,099b4a171e143386207abacf0324416e,LFT FIT (PTY) LTD,South Africa,Apparel & Fashion,"People, Analytics, Social, Expense, Inventory, One, CRM, Projects",in_scope,drafted,,zoho_file,zoho-file:2004939288108,2004939288108,,,"# LFT FIT brings online, in-store, and B2B customers into one view in Zoho CRM
+
+No customer quote is in the source. None is added here.
+
+## The company
+
+LFT FIT is a South African e-commerce and retail business that sells premium gym wear locally and internationally. It sells through an online store, a point-of-sale system, and a B2B channel for custom clothing orders. It has been trading for three years. It runs every part of the business itself except order fulfilment and delivery, which third-party logistics providers handle. The source does not give a headcount.
+
+## The challenge
+
+LFT FIT had no central place for customer information. Details came in from several sources and sat in separate software that did not talk to each other, so each customer's journey was split across tools. The business wanted one platform and one view of every customer for sales, marketing, support, and reporting.
+
+The business set three requirements:
+
+- A no-code system that the team could run without scripting, so it can grow.
+- Native features only, with no paid third-party extensions, to keep cost down.
+- The same functions the team already relied on, such as Omnisend, rebuilt in Zoho Marketing Automation.
+
+### How the project started
+
+The project opened with a workshop that mapped the business processes, systems, stakeholders, customer journeys, and reporting needs. From that, the project team drew up a design showing how data moves between the Zoho apps and the existing non-Zoho systems. The whole project took three months, with a week of solution design.
+
+## The solution
+
+LFT FIT works from Zoho One. Zoho CRM holds the B2B customers and gives every team one customer view. It receives B2C customers, products, and orders from Shopify, which runs both the online store and the point of sale.
+
+### One record for each customer
+
+Shopify sends customer, product, and order data to Zoho CRM and Zoho Marketing Automation. Zoho CRM passes data on to the other Zoho apps the business uses. B2B leads come in through Zoho Forms and are created in Zoho CRM when a form is completed.
+
+### Support and marketing on the same customer
+
+Zoho Desk is the single place for support queries from WhatsApp, Instagram, Facebook, email, and the Contact Us form. Tickets are pushed to the customer in Zoho CRM and to Zoho Social. Zoho Marketing Automation runs journeys for abandoned carts and purchase follow-ups for Shopify and CRM customers and writes campaign data back to the customer in Zoho CRM.
+
+### Social, projects, and reporting
+
+Zoho Social shows how each social channel is performing and manages posts, and sends engagement data to Zoho CRM and Zoho Desk. Zoho Projects plans internal projects and events, and Zoho Expense tracks employee expenses and project costs. Zoho Analytics reports across all of the apps.
+
+## Benefits
+
+Customer data that was scattered is now in one connected system. Sales, marketing, and support work from the same customer record across every channel the customer uses. The source says the project paid back through streamlined operations, and describes the solution as iterative and scalable. It gives no figure.
+
+## Partner engagement
+
+Both& Digital Transformation is the partner on the Find a Partner record for this story. The source describes the work as a workshop, a design of the full set of apps, an implementation, and training. It gives the project length as three months, with one week of solution design.
+
+Industry type Sport apparel and fashion e-commerce
+Type of business B2C and B2B
+Employees Not stated
+Features that helped us
+Integrations
+Reports & Analytics
+
+Directory card: LFT FIT brings online, in-store, and B2B customers into one view in Zoho CRM
+
+## Flags
+
+These are for the editor. They are not part of the page.
+
+- There is no customer quote and no named speaker in the source. The quote test cannot be run.
+- The PDF does not name the customer. It says ""the client"". The name LFT FIT (PTY) LTD comes from the directory record. Consent has to name it.
+- The PDF does not name the partner. Both& Digital Transformation comes from the directory record.
+- The source states no figure for results. Key results is omitted. ""Discernible return on investment"" has no number.
+- The PDF gives a three-month project with one week of design, 2¾ months of implementation, and two months of training. Those do not add up to three months unless training ran alongside the build. Confirm before using any duration other than ""three months"".
+- Zoho One is the bundle in the source. The PDF lists Zoho CRM, Zoho Desk, Zoho Marketing Automation, Zoho Social, Zoho Projects, Zoho Expense, Zoho Sign, and Zoho Forms, and its table also names Zoho People and Zoho Analytics. The directory record lists Zoho Inventory, which the PDF does not mention, and does not list Zoho Desk or Zoho Marketing Automation.
+- Zoho Sign is listed in the PDF but is not used anywhere in the data-flow table. It is left out of the page.
+- Omnisend is the only previous system the PDF names. The earlier customer system is not named.
+- ""Three years in operation"" is relative to the date the PDF was written. The PDF has no date.
+- Headcount is not in the source.
+"
 6de952acc7d90f47,Both& Digital Transformation,099b4a171e143386207abacf0324416e,NMG Consultants & Actuaries (Pty) Ltd,South Africa,,"One, Projects, CRM, Analytics, Bookings, Expense",in_scope,held,page could not be opened,web,https://www.bothand.co.za/blogs/post/case-study-benefits-counselling-firm,,,,
 af62c8723f395b70,Both& Digital Transformation,099b4a171e143386207abacf0324416e,Silverline Brands (Pty) Ltd,South Africa,,"CRM, Analytics, SalesIQ, Social, CRM Plus, One",in_scope,fetched,,zoho_file,zoho-file:2004939240050,2004939240050,,,
 33c49d43ea8001e2,Both& Digital Transformation,099b4a171e143386207abacf0324416e,The Core Computer Business - iStore ,South Africa,IT/ITES,"Bookings, Directory",out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2004939351126,2004939351126,,,
@@ -779,7 +981,73 @@ bd9ece79d2d3afc6,"Digital Reset, Corp.",f702ef5f19ec6a2296d9b8cc289e3303,SIGMA,P
 43fda65e1b17a9ce,FAIRCHANCE FOR CRM,ebe3ccee48532d5996c9d273e2ecabce,College Money Matters,United States,Non-Profit Organization Management / NGO,"CRM, Bookings, Campaigns, Forms, Expense",in_scope,fetched,,zoho_file,zoho-file:2004119692245,2004119692245,,,
 ed880aab543b0da5,FAIRCHANCE FOR CRM,ebe3ccee48532d5996c9d273e2ecabce,Al Furqan Academy,United Kingdom,Education,"Creator, Books, Forms, CRM",in_scope,fetched,,zoho_file,zoho-file:2004407448680,2004407448680,,,
 9ae7b783ebe5e081,FAIRCHANCE FOR CRM,ebe3ccee48532d5996c9d273e2ecabce,Matrix Flavors,Malaysia,Food & Beverages,Creator,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2004423277660,2004423277660,,,
-2cd47b9196d0d969,FAIRCHANCE FOR CRM,ebe3ccee48532d5996c9d273e2ecabce,Stanstead Immigration Services,Canada,,"CRM, Forms, Sign, Books, WorkDrive, Bookings, SalesIQ",in_scope,fetched,,zoho_file,zoho-file:2005123001679,2005123001679,,,
+2cd47b9196d0d969,FAIRCHANCE FOR CRM,ebe3ccee48532d5996c9d273e2ecabce,Stanstead Immigration Services,Canada,,"CRM, Forms, Sign, Books, WorkDrive, Bookings, SalesIQ",in_scope,drafted,,zoho_file,zoho-file:2005123001679,2005123001679,,,"# Stanstead Immigration manages visa clients and leads in Zoho CRM
+
+No customer quote is in the source. None is added here.
+
+## The company
+
+Stanstead Immigration is a Canadian company that handles study visas, visitor visas, business programs, family sponsorship, general immigration, and U.S. immigration. Its team guides individuals and families through the application process. The source does not say when the company was founded, how many people work there, or where in Canada it is based.
+
+## The challenge
+
+As demand grew, Stanstead's manual processes stopped keeping up. Client information and visa applications were handled on paper and by hand, which took time and raised the risk of data entry errors. The source does not name a previous system.
+
+Visa files need identification papers, financial records, and supporting documents. Tracking them by hand caused delays, and papers could be misplaced or lost. Consultations, document submissions, and follow-ups were hard to schedule, so appointments clashed and follow-ups were missed. The team also needed to answer website visitors in real time, because a fast reply is what turns a visitor into a client.
+
+## The solution
+
+Stanstead's team works from Zoho CRM as part of Zoho One. Each client has one record that everyone on the team can open.
+
+### Client records and follow-ups
+
+Zoho CRM holds all client information in one place. Automated follow-ups make sure no client is overlooked, and the team can see where each visa application stands, so clients get updates without delay.
+
+### Leads that are sorted for the team
+
+Zoho CRM categorises and prioritises incoming leads. Workflows and reminders make follow-ups happen on a schedule, and the team spends its time on the clients most likely to sign.
+
+### Intake, agreements, and signatures
+
+Zoho Forms collects client details through online forms that write straight into Zoho CRM, so nobody retypes them. Clients sign documents electronically in Zoho Sign from anywhere in the world. Zoho Contracts creates, approves, and tracks client agreements and sends reminders before they renew.
+
+### Appointments and website chat
+
+Zoho Bookings schedules consultations, and clients can submit documents when it suits them. Zoho SalesIQ puts a live chat on the website, tracks what visitors do, and sends the lead to the right team member.
+
+### Billing and documents
+
+Zoho Books issues invoices and records online payments. Zoho WorkDrive stores client documents, and permissions limit each file to authorised staff.
+
+## Benefits
+
+Automating data entry, document handling, and follow-ups cuts the time each application takes. The team processes visa applications more quickly and handles more clients. Documents sit in one place, so fewer files go missing. Live chat and automated lead handling in Zoho SalesIQ and Zoho CRM raise the rate at which leads become clients. The source gives no figure for any of these.
+
+## Partner engagement
+
+FAIRCHANCE FOR CRM is the partner on the Find a Partner record for this story. The source does not say what the partner configured or how long it took.
+
+Industry type Immigration services
+Type of business Not stated
+Employees Not stated
+Features that helped us
+Workflow automation
+Integrations
+
+Directory card: Stanstead Immigration manages visa clients and leads in Zoho CRM
+
+## Flags
+
+These are for the editor. They are not part of the page.
+
+- There is no customer quote and no named speaker in the source. The quote test cannot be run.
+- The source states no figure. Key results is omitted. ""Higher conversion rate"" and ""more quickly"" have no number behind them.
+- The previous system is not named. The source says manual methods and paperwork.
+- The PDF does not name the partner. FAIRCHANCE FOR CRM comes from the directory record. The partner's role and the project length are not stated.
+- Zoho One is the bundle in the source. The products named are Zoho CRM, Zoho Forms, Zoho Sign, Zoho Contracts, Zoho Books, Zoho WorkDrive, Zoho Bookings (the PDF says ""Zoho Booking""), and Zoho SalesIQ. The directory record does not list Zoho Contracts.
+- Founded year, headcount, number of CRM users, and location in Canada are not in the source.
+- We do not know if anyone at Stanstead will stand by a quote.
+"
 ada6ec85f83c4ab8,FAIRCHANCE FOR CRM,ebe3ccee48532d5996c9d273e2ecabce,Stanstead Immigration Services,Canada,,One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2005305048758,2005305048758,,,
 ea4576d10c6b7562,FAIRCHANCE FOR CRM,ebe3ccee48532d5996c9d273e2ecabce,AC Design Solution,United Kingdom,"EPC (Engineering, Procurement, Construction)","CRM, Projects",in_scope,held,file has no text layer,zoho_file,zoho-file:2005309738070,2005309738070,,,
 12c79148982f513d,FAIRCHANCE FOR CRM,ebe3ccee48532d5996c9d273e2ecabce,Ai Wealth Pro,United Arab Emirates,Trading,One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",web,https://fairchanceforcrm.com/case-studies/,,,,
@@ -1087,7 +1355,68 @@ dbb0256034bb7ebc,Trigya Innovations,ea6f6f5bfb463ebbb78dd9d18224a4bf,kkindustrie
 d9cd931611c2cc0f,Trigya Innovations,ea6f6f5bfb463ebbb78dd9d18224a4bf,Nowvia Technologies,India,IT/ITES,People,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",web,https://workdrive.zohoexternal.com/external/writer/26eae9225d7480336183d1a06d89bccdfa2beb9a8002c64c8ec1f5f02f981b62,,,,
 6cb68a68f7c0d155,PC-Tech Information Systems,57c20f5ab7b555aa0fb6a85649648630,IOTECHWORLD AVIGATION PRIVATE LIMITED,India,Aviation,"Desk, FSM, Inventory",in_scope,fetched,,zoho_file,zoho-file:2005442013418,2005442013418,,,
 7c3549690580e00f,GoldenLion Consulting Services Pvt. Ltd.,a29480704ae9c59a219c565632264594,Airport Property (Pty) Ltd,South Africa,Real Estate,One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2004355142973,2004355142973,,,
-4ae190f5fd3976b7,GoldenLion Consulting Services Pvt. Ltd.,a29480704ae9c59a219c565632264594,"AndersonDodson, P.C.",United States,Legal Services,CRM,in_scope,fetched,,zoho_file,zoho-file:2004355144873,2004355144873,,,
+4ae190f5fd3976b7,GoldenLion Consulting Services Pvt. Ltd.,a29480704ae9c59a219c565632264594,"AndersonDodson, P.C.",United States,Legal Services,CRM,in_scope,drafted,,zoho_file,zoho-file:2004355144873,2004355144873,,,"# AndersonDodson follows up with everyone who contacts the firm using Zoho CRM
+
+""My firm uses Zoho CRM every day. When a new potential client contacts us through the web form, the details get automatically saved in the CRM, and from there we can convert the lead into customer, set follow up tasks, schedule meetings and much more. With the help of the customized CRM and web form, we can now keep track of, and follow up with everyone who reaches out to us, so that nobody falls through the cracks.""
+Penn Dodson, Attorney, Firm Owner, AndersonDodson P.C.
+
+## The company
+
+AndersonDodson, P.C. is a workers' rights law firm in New York City. It recovers wages for employees who are unpaid or underpaid. Its clients are individuals, and two people at the firm use the CRM. The source does not give a founding year or a headcount.
+
+## The challenge
+
+AndersonDodson takes a client on only after a strict qualification process. The intake has several steps, and the firm has to keep accurate records and documents at each one. As the firm's reputation grew, so did the number of leads and clients, and keeping those records by hand took a large share of the team's time.
+
+The firm looked for a simple, easy-to-manage CRM that was scalable and cost effective. After trying a few products it chose Zoho CRM. The source does not name those products or say what the firm used before them. Dodson wanted to tailor the CRM to the firm's intake process, but neither she nor her partner had the time or the expertise, so the firm looked for an implementation partner.
+
+The website's Contact Us form was a second gap. It collected contact details and a callback request, but it could not tell a prospective client from a general query or a press enquiry.
+
+## The solution
+
+AndersonDodson's team works from a customised Zoho CRM, set up for the firm's intake process.
+
+### Enquiries that arrive sorted
+
+The Contact Us form now has fields where a visitor states why they are getting in touch. The details go straight into Zoho CRM and are sorted into categories as they arrive, so the team knows who to contact and why. From the record, the team converts a lead, sets follow-up tasks, and schedules meetings.
+
+### Campaigns tied to the record
+
+Zoho Campaigns is connected to Zoho CRM and runs the firm's drip campaigns. When an email campaign goes out, Zoho CRM creates follow-up tasks automatically. The setup stops duplicate campaigns and duplicate contacts.
+
+## Benefits
+
+Every person who reaches the firm through the web form lands in Zoho CRM, sorted by what they want. Leads become clients, follow-up tasks, and meetings from the same record, and the firm keeps track of everyone who reaches out. The source gives no figure for time saved.
+
+## Partner engagement
+
+GoldenLion Consulting Services set up Zoho CRM for AndersonDodson and customised it for a law firm. Penn Dodson found GoldenLion through Zoho. After the CRM went live, GoldenLion also set up Zoho Campaigns, connected it to the CRM, and customised the website's Contact Us form. The firm has since asked GoldenLion for further enhancements. The source does not give the project length.
+
+""The GoldenLion team has surpassed my expectations. Sometimes I think they are magicians, the way they can fully grasp and understand our requirements. They have been responsive, enthusiastic, and extremely professional. They have both listened to what we have said we wanted, while also teaching us about aspects of the software we didn't know that we didn't know.""
+
+Industry type Law firm
+Type of business B2C
+Employees 2 CRM users
+Features that helped us
+Customization
+Workflow automation
+Integrations
+
+Directory card: AndersonDodson follows up with everyone who contacts the firm using Zoho CRM
+
+## Flags
+
+These are for the editor. They are not part of the page.
+
+- The pull quote names Zoho CRM and an outcome, and it does not name the partner. The PDF prints it as ""ZOHO CRM"". Dodson has not confirmed it for Zoho's site.
+- The PDF puts the name Penn Dodson beside two other quotes. The attribution of the pull quote and of the GoldenLion quote comes from page layout. Confirm who said each.
+- The GoldenLion quote praises the partner. It sits in Partner engagement and cannot be the pull quote.
+- The source states no figure. Key results is omitted.
+- The previous system is not named. The source says the firm tried a few products and handled intake by hand.
+- The PDF gives no founding year, headcount, or project length. ""Two users"" is the only scale figure, and it is the number at go-live. It may have changed.
+- The directory record lists Zoho CRM only. The PDF also names Zoho Campaigns.
+- We do not know if Penn Dodson still stands by the quote.
+"
 08f17f6d0e2547bd,GoldenLion Consulting Services Pvt. Ltd.,a29480704ae9c59a219c565632264594,Autociel,Switzerland,Automobile/ Automotive,One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2004355178161,2004355178161,,,
 186e5d0dd9c5a00b,GoldenLion Consulting Services Pvt. Ltd.,a29480704ae9c59a219c565632264594,Indus Travels,Canada,Travel & Tourism,One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2004355183655,2004355183655,,,
 08cdcce2e68f3bd3,GoldenLion Consulting Services Pvt. Ltd.,a29480704ae9c59a219c565632264594,Phone One,United States,"TME (Telecom, Media, Entertainment)",One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2004355205797,2004355205797,,,
@@ -1113,7 +1442,85 @@ aedcc878b2fd9417,GoldenLion Consulting Services Pvt. Ltd.,a29480704ae9c59a219c56
 fe2d4507f3e221de,Extension ERP,855264a4fcb01711756517cb3d68c684,FNP,India,,CRM Plus,in_scope,fetched,,zoho_file,zoho-file:2005383945846,2005383945846,,"bundle named, products inside it are not",
 4388bd272e913df5,Extension ERP,855264a4fcb01711756517cb3d68c684,Entab InfoTech,India,Education,"CRM, Analytics",in_scope,fetched,,zoho_file,zoho-file:2005383985183,2005383985183,,,
 059fcecb22b8a3c2,Extension ERP,855264a4fcb01711756517cb3d68c684,XA Group,United Arab Emirates,Automobile/ Automotive,"CRM, Analytics",in_scope,fetched,,zoho_file,zoho-file:2005384003991,2005384003991,,,
-adc043a02b8a52be,Extension ERP,855264a4fcb01711756517cb3d68c684,Khaitan Family Educational Institutions,India,Education,"CRM, Social, Forms",in_scope,fetched,,zoho_file,zoho-file:2005385211713,2005385211713,,,
+adc043a02b8a52be,Extension ERP,855264a4fcb01711756517cb3d68c684,Khaitan Family Educational Institutions,India,Education,"CRM, Social, Forms",in_scope,drafted,,zoho_file,zoho-file:2005385211713,2005385211713,,,"# Khaitan Schools bring admissions enquiries from every channel into Zoho CRM
+
+No customer quote is in the source. None is added here.
+
+## Key results:
+- Lead conversion improvement 35%
+- Reduction in manual tasks 40%
+
+## The company
+
+The Khaitan School was established in 1995. The source names two branches, Khaitan World School and Khaitan Public School. The school has more than 3,600 students, more than 200 staff, and an alumni network of more than 1,400. The Khaitan family of Ramgarh, Rajasthan, has a long history in education, and the school carries that on.
+
+## The challenge
+
+Admissions enquiries reached the school through the website, Facebook, and admission forms. The team could not capture and track them reliably, and could not follow up with prospective students and their families quickly. Website data from the two schools was mixed together, so the team could not analyse each school's leads separately. Without task tracking, it was unclear which enquiries were genuine, what stage each was at, and when to close it.
+
+Finance had its own manual step. Each month, someone copied cost-centre data from Google Sheets by hand, which was slow and error-prone. The source does not name the system the school used for leads before.
+
+The school set five aims for the new system:
+
+- Track student enquiries and admission forms.
+- Improve communication with prospective students and parents.
+- Keep the status of each admission up to date.
+- Recognise repeat students and families.
+- Answer student questions around the clock.
+
+## The solution
+
+The school's admissions team works from Zoho CRM, which holds every enquiry in one place.
+
+### Enquiries from every channel in one place
+
+The website is connected to Zoho CRM, so each admission form shows where it came from and which school is generating more leads. A tool called Lead Chains brings Facebook leads into Zoho CRM automatically. Zoho Forms supplies admission forms that parents open by QR code or link, and each submission goes straight into the CRM. Zoho CRM groups the leads from all these sources and automates follow-ups.
+
+### Follow-up by WhatsApp and email
+
+A connection with Pinnacle lets the team send WhatsApp messages from the CRM and give each family a unique enquiry ID. It also schedules follow-up notifications by WhatsApp and email.
+
+### Finance data without copy and paste
+
+A Tally connector, built as a desktop application with React and TDL XML, exports cost-centre data from both schools to a Google Sheet in a fixed format. Power BI dashboards read from that sheet.
+
+### Social media
+
+Zoho Social lets the team schedule posts to the school's Facebook account, sync published content, and see performance reports.
+
+## Benefits and ROI
+
+Enquiries from the website, Facebook, and forms land in Zoho CRM and the team follows up faster. Zoho CRM and Zoho Forms handle data entry and follow-up reminders, which the source credits with a 40% reduction in manual tasks, and lead conversion improved by 35%. The school's finance team gets cost-centre data in a consistent format for its dashboards.
+
+## Partner engagement
+
+Extension ERP is the partner on the Find a Partner record for this story. The source describes the work in the first person plural and does not name the partner. It covers the CRM setup, the connection to Lead Chains, Pinnacle, and Tally, and the desktop connector built with React and TDL XML. It does not give the project length.
+
+Industry type Education
+Type of business Not stated
+Employees 200+ staff
+Features that helped us
+Workflow automation
+Integrations
+
+Directory card: Khaitan Schools bring admissions enquiries from every channel into Zoho CRM
+
+## Flags
+
+These are for the editor. They are not part of the page.
+
+- There is no customer quote and no named speaker in the source. The quote test cannot be run.
+- The source gives two sets of figures that disagree. The Results list says 90% boost in customer engagement, 85-90% streamlined support processes, 87-90% increase in social media engagement, and 100% on-time scheduling. The Conclusion says 35% better lead conversion, 40% fewer manual tasks, and 20% more student engagement. Engagement is 90% in one and 20% in the other. The draft uses the two Conclusion figures that no other figure contradicts. Confirm all of them with the customer before any figure is published. They are the partner's figures.
+- The Results list also says ""better financial management"" with no number.
+- The Zoho Social section refers to ""XA Group's Facebook account"", not Khaitan. Check whether XA Group is the school's parent or a copy-paste error from another case study.
+- The Zoho Social section describes a Facebook integration only, so the ""87-90% increase in social media engagement"" claim is not carried over.
+- Lead Chains, Pinnacle, Tally, Power BI, and Google Sheets are third-party tools. Each is named once in the body.
+- The 24x7 support aim is listed but the source does not say it was delivered. The draft lists it as an aim only.
+- The directory record lists Zoho CRM, Zoho Social, and Zoho Forms. That matches the PDF.
+- Founded year of the family business and the school's legal name are not confirmed. The family history is in the PDF's own voice and is not a customer quote.
+- The previous lead system is not named. Google Sheets is named for finance data only.
+- ""200+ staff"" is not a standard employee band. Pick the band with the customer.
+"
 10921f7ce9882c61,Coderack IT Labs Pvt. Ltd.,ff7539c36cd800aea22fd6781da1fdb0,FAITH LUMBER PRIVATE LIMITED,India,Trade,CRM Plus,in_scope,fetched,,zoho_file,zoho-file:2004384695712,2004384695712,,"bundle named, products inside it are not",
 93d7639b565227d3,Coderack IT Labs Pvt. Ltd.,ff7539c36cd800aea22fd6781da1fdb0,De Decor Engineering Pvt Ltd,India,"EPC (Engineering, Procurement, Construction)",One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",web,https://www.coderack.net/case-study-davinciya,,,,
 bd1b8829489b8048,Coderack IT Labs Pvt. Ltd.,ff7539c36cd800aea22fd6781da1fdb0,Kiawa,India,Business Services,One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",web,https://www.coderack.net/case-study-kiawa,,,,
@@ -1363,7 +1770,70 @@ da86e0b95bbf59cf,Wisethink Information Solutions Pvt. Ltd,7c5e37c2bc4a26995ee24d
 98241c439d4d2f48,Wisethink Information Solutions Pvt. Ltd,7c5e37c2bc4a26995ee24dae5e6ca59a,Terra Rex Energy Private Limited,India,"Energy, Power and Utilities",One,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",web,https://wisethinksolutions.com/projects/,,,,
 9969f1965f62002a,Wisethink Information Solutions Pvt. Ltd,7c5e37c2bc4a26995ee24dae5e6ca59a,IFFCO-MC Crop Science Pvt Ltd,India,Agriculture & Farming,Creator,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",web,https://wisethinksolutions.com/projects/,,,,
 1eedcbbe2184ebdf,AgaramSoft Technologies,63e541cb2a758acd015a2c4b7d61f2c7,NELLAI KARUPATTI COFFEE,India,Food & Beverages,Creator,out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2004265176146,2004265176146,,,
-0469ecc17d3f569f,AgaramSoft Technologies,63e541cb2a758acd015a2c4b7d61f2c7,Rheonik Americas Inc,United States,"Energy, Power and Utilities","CRM, Creator",in_scope,fetched,,zoho_file,zoho-file:2005295681194,2005295681194,,,
+0469ecc17d3f569f,AgaramSoft Technologies,63e541cb2a758acd015a2c4b7d61f2c7,Rheonik Americas Inc,United States,"Energy, Power and Utilities","CRM, Creator",in_scope,drafted,,zoho_file,zoho-file:2005295681194,2005295681194,,,"# Rheonik Americas moves its quotation matrix from Excel to Zoho Creator and Zoho CRM
+
+No named customer quote is in the source. None is added here.
+
+## The company
+
+Rheonik makes custom Coriolis mass flow meters for specialised fuel measurement. Rheonik Americas Inc is the customer named on the directory record, in the United States. The quoting tool covers three products, Sensor, Transmitter, and Documentation, and builds each quote with a matrix method. The source does not say where in the US the company is, how large it is, or how many people use the CRM.
+
+## The challenge
+
+Quotes began as a full matrix in Microsoft Excel, with detailed calculations to set up. Once the Excel quote was ready, someone had to rebuild the final version in the CRM by copying and pasting. That took time, invited errors, and made corrections expensive. The finished quote was exported as a PDF, emailed to the client, and stored for later.
+
+Creating work by hand also made it harder to track where it came from and how it was used.
+
+## The solution
+
+Rheonik's quoting now runs in a custom app built on Zoho Creator and connected to Zoho CRM.
+
+### From matrix to form
+
+The Excel matrix became a set of flows in Zoho Creator. A user fills in a form with the quote details. On submission, the app generates the quote as a PDF that can be downloaded with one click. Prices, including discounts and adjustments, are calculated when the PDF is produced.
+
+### Quotes in the CRM without retyping
+
+The quote data is pushed to Zoho CRM when the quote is created, so nobody copies it across. Staff create quotes after talking to the customer by phone or email, and the quote syncs to Zoho CRM for the record. Customers can also create their own quotes in the app.
+
+### Deals and contacts together
+
+The app links deals to contacts and sends notifications through workflows, so users see each deal alongside the people involved.
+
+## Benefits
+
+Automation reduces the manual errors that came from rebuilding quotes by hand. Staff produce accurate quotes more quickly, and customers can do the same. The source gives no figure for time saved or errors avoided.
+
+## Partner engagement
+
+AgaramSoft Technologies built the quoting app on Zoho Creator and connected it to Zoho CRM and the Zoho One suite. The source does not give the project length.
+
+The client's review, which names no person in the source:
+
+""We partnered with Agaramsoft to develop a highly sophisticated and complex custom CPQ application integrated with our Zoho CRM and Zoho One Suite. The team at Agaramsoft has consistently gone above and beyond to support us throughout the process. Despite the challenges of working across different time zones, they have been remarkably accommodating, often making themselves available outside their regular work hours to assist us. Our requirements were intricate and demanding, making this a challenging project, but the team at Agaramsoft always managed to deliver satisfactory solutions. We are highly impressed with their dedication and expertise and wholeheartedly recommend them for any Zoho integration projects.""
+
+Industry type Energy, power, and utilities
+Type of business Not stated
+Employees Not stated
+Features that helped us
+Customization
+Integrations
+
+Directory card: Rheonik Americas moves its quotation matrix from Excel to Zoho Creator and Zoho CRM
+
+## Flags
+
+These are for the editor. They are not part of the page.
+
+- The scope needs a decision before this goes to the partner. The story is mainly about Zoho Creator. Zoho CRM is where quotes sync, and the PDF says little about what the CRM does. It may belong on the hold list.
+- The only quote is an unattributed client review. It names the partner and praises the partner, so it fails the quote test. It sits in Partner engagement, and a person at Rheonik has to be found to give a quote about the product and the outcome.
+- The PDF is written for a general audience in places, in the conditional (""we can"", ""we will""). It is not clear which features are live. The CSV or Excel upload is described as an enhancement and also as a result. The line about customers creating their own quotes is stated as an option. Confirm both.
+- The PDF compares AgaramSoft to Rheonik in its introduction. That line is not used.
+- The source states no figure. Key results is omitted.
+- The previous system is Microsoft Excel plus manual entry in the CRM. The CRM is not named.
+- The PDF names the customer as Rheonik. The directory record says Rheonik Americas Inc. Consent has to name the exact company.
+- Company size, location, and the number of users are not in the source.
+"
 7d473cd6a3b0ff5e,AgaramSoft Technologies,63e541cb2a758acd015a2c4b7d61f2c7,VSINTERCONNECT INDIA PRIVATE LIMITED,India,Manufacturing,"Creator, Books",out_of_scope,held,"product is outside CRM, Desk, and Campaigns",zoho_file,zoho-file:2005382861846,2005382861846,,,
 3e3fe3491a308076,AgaramSoft Technologies,63e541cb2a758acd015a2c4b7d61f2c7,KIBUN BEAUTY LLC,United Arab Emirates,Apparel & Fashion,"CRM, Creator, People, Books, One, Payroll",in_scope,fetched,,zoho_file,zoho-file:2005382877139,2005382877139,,,
 da6d07281ad2a6d0,AgaramSoft Technologies,63e541cb2a758acd015a2c4b7d61f2c7,Mitchs Boutique,United States,,"Creator, CRM, Books",in_scope,fetched,,zoho_file,zoho-file:2005449846478,2005449846478,,,
