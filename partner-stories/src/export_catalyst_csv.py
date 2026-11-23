@@ -45,16 +45,21 @@ def main() -> None:
     catalog = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_CATALOG
     out = Path(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_OUT
     out.parent.mkdir(parents=True, exist_ok=True)
-    count = 0
+    seen = set()
+    duplicates = 0
     with catalog.open(encoding="utf-8") as src, out.open("w", newline="", encoding="utf-8") as dst:
         writer = csv.DictWriter(dst, fieldnames=COLUMNS)
         writer.writeheader()
         for line in src:
             if not line.strip():
                 continue
-            writer.writerow(row_for(json.loads(line)))
-            count += 1
-    print(f"wrote {count} rows to {out}")
+            record = json.loads(line)
+            if record.get("story_id") in seen:
+                duplicates += 1
+                continue
+            seen.add(record.get("story_id"))
+            writer.writerow(row_for(record))
+    print(f"wrote {len(seen)} rows to {out} ({duplicates} duplicate story_id rows skipped)")
 
 
 if __name__ == "__main__":
