@@ -14,7 +14,7 @@
     {"name": "status", "type": "text"},
     {"name": "hold_reason", "type": "text"},
     {"name": "source_kind", "type": "text"},
-    {"name": "primary", "type": "text"},
+    {"name": "primary_link", "type": "text"},
     {"name": "file_id", "type": "text"},
     {"name": "stratus_key", "type": "text"},
     {"name": "flags", "type": "text"},

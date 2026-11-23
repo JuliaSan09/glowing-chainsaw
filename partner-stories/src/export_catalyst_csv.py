@@ -16,7 +16,7 @@ DEFAULT_OUT = HERE.parent / "catalyst" / "partner_stories_import.csv"
 COLUMNS = [
     "story_id", "partner", "partner_id", "customer", "country", "industry",
     "product_names", "scope", "status", "hold_reason", "source_kind",
-    "primary", "file_id", "stratus_key", "flags", "draft",
+    "primary_link", "file_id", "stratus_key", "flags", "draft",
 ]
 
 
@@ -33,7 +33,7 @@ def row_for(record: dict) -> dict:
         "status": record.get("status", ""),
         "hold_reason": record.get("hold_reason", ""),
         "source_kind": record.get("source_kind", ""),
-        "primary": record.get("primary", ""),
+        "primary_link": record.get("primary", ""),
         "file_id": str(record.get("file_id") or ""),
         "stratus_key": "",
         "flags": ", ".join(record.get("flags") or []),

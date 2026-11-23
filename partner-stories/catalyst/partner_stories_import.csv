@@ -1,4 +1,4 @@
-story_id,partner,partner_id,customer,country,industry,product_names,scope,status,hold_reason,source_kind,primary,file_id,stratus_key,flags,draft
+story_id,partner,partner_id,customer,country,industry,product_names,scope,status,hold_reason,source_kind,primary_link,file_id,stratus_key,flags,draft
 8383c8e67c4742aa,i3 Network Systems,7b329fdc5bead2ea31280535b4268782,VNG Cloud,Vietnam,IT/ITES,"Projects, Bigin, Analytics, Flow, Desk, Campaigns",in_scope,fetched,,zoho_file,zoho-file:2005432631953,2005432631953,,,
 8383c8e67c4742aa,i3 Network Systems,7b329fdc5bead2ea31280535b4268782,VNG Cloud,Vietnam,IT/ITES,"Projects, Bigin, Analytics, Flow, Desk, Campaigns",in_scope,fetched,,zoho_file,zoho-file:2005432631953,2005432631953,,,
 9608f475689bd499,i3 Network Systems,7b329fdc5bead2ea31280535b4268782,Thien Minh Group,Vietnam,Hospitality,"Desk, Social",in_scope,fetched,,zoho_file,zoho-file:2005432635235,2005432635235,,,
