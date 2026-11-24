@@ -21,6 +21,16 @@ COLUMNS = [
 ]
 
 
+ZOHO_FILE_URL = "https://store.zoho.com/FileDownloadPublic?fileId={file_id}"
+
+
+def link_for(record: dict) -> str:
+    primary = record.get("primary") or ""
+    if primary.startswith("zoho-file:"):
+        return ZOHO_FILE_URL.format(file_id=primary.split(":", 1)[1])
+    return primary
+
+
 def draft_for(story_id: str) -> str:
     path = DRAFTS / f"{story_id}.md"
     return path.read_text(encoding="utf-8") if path.exists() else ""
@@ -40,7 +50,7 @@ def row_for(record: dict) -> dict:
         "status": "drafted" if draft else record.get("status", ""),
         "hold_reason": record.get("hold_reason", ""),
         "source_kind": record.get("source_kind", ""),
-        "primary_link": record.get("primary", ""),
+        "primary_link": link_for(record),
         "file_id": str(record.get("file_id") or ""),
         "stratus_key": "",
         "flags": ", ".join(record.get("flags") or []),
